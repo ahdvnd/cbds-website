@@ -126,7 +126,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="https://www.clouddatascience.org/">Go back to the Homepage</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
@@ -160,6 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html"><i class="fa fa-check"></i>Course 8: Getting Data</a><ul>
 <li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html#exercise-1-saving-a-data-frame-as-an-rds-file"><i class="fa fa-check"></i>Exercise 1: Saving a data frame as an rds file</a></li>
 <li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html#exercise-2-scraping-imdb-data"><i class="fa fa-check"></i>Exercise 2: Scraping IMDB data</a></li>
+<li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html#exercise-3-scraping-nba-data-from-espn.com"><i class="fa fa-check"></i>Exercise 3: Scraping NBA data from ESPN.com</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Course 9: Data Analysis</a></li>
 <li class="chapter" data-level="" data-path="communication.html"><a href="communication.html"><i class="fa fa-check"></i>Course 10: Written and Oral Communication in Data Science</a></li>
@@ -219,28 +220,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In this exercise, your students will practice working with the package <strong>rvest</strong> and scraping data from the web. We’ll more specifically scrape top 250 movies from the website IMDB. This information can be found on this <a href="https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating">link</a>. Ask your students to load the packages <strong>rvest</strong>, <strong>tidyverse</strong> and <strong>stringr</strong>.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(rvest)</code></pre>
 <pre><code>## Loading required package: xml2</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
-## ✔ tibble  1.4.2     ✔ dplyr   0.7.4
-## ✔ tidyr   0.8.0     ✔ stringr 1.4.0
-## ✔ readr   1.1.1     ✔ forcats 0.3.0</code></pre>
-<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.4.4</code></pre>
-<pre><code>## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter()         masks stats::filter()
-## ✖ readr::guess_encoding() masks rvest::guess_encoding()
-## ✖ dplyr::lag()            masks stats::lag()
-## ✖ purrr::pluck()          masks rvest::pluck()</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(stringr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;rvest&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     pluck</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     guess_encoding</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(stringr)</code></pre>
 <p>The first step in using the rvest package and scraping data from the web is to read the content of the webpage we’re interested in. For this, we use the function <code>read_html()</code> from the package <strong>rvest</strong>. The address above only contains the first 50 movies but we can use similar process for the pages that come after.</p>
 <pre class="sourceCode r"><code class="sourceCode r">imdb &lt;-<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating&quot;</span>)</code></pre>
 <p>The object <code>imdb</code> contains all the html content of the page in the form of an <strong>xml</strong> document that contains the <em>head</em> and the <em>body</em> of the page. Now, here is the important part. Let’s say we would like to make a data frame that has 4 columns. The first column is the name of the movies, the second column is their ratings, the third column is their genres, and the last column is the year the movies are made. We want to make this data frame for the top 50 movies. For scraping different components of a webpage we need to know the CSS <em>selector</em> of the specific part of the html file they’re scraping.</p>
-<p>We are going to use a Chrome Extension called SelectorGadget. SelectorGadget is an open source tool that makes CSS selector generation and discovery on complicated sites a breeze. They should install the Chrome Extension. They can download SelectorGadget Chrome Extension <a href="https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb?hl=en">here</a>. They can learn more about the SelectorGadget in this video.</p>
-<div class="figure">
-<img src="https://vimeo.com/52055686" alt="Using the SelectorGadget" />
-<p class="caption">Using the SelectorGadget</p>
-</div>
+<p>We are going to use a Chrome Extension called SelectorGadget. SelectorGadget is an open source tool that makes CSS selector generation and discovery on complicated sites a breeze. They should install the Chrome Extension. They can download SelectorGadget Chrome Extension <a href="https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb?hl=en">here</a>. They can learn more about the SelectorGadget in this <a href="https://vimeo.com/52055686">video</a>.</p>
 <p>So how do we use the SelectorGadget to find the movie title? After installing the extension, ask your students to drag the bookmarklet to their bookmark bar, then go to any page and launch it. A box will open in the bottom right of the website. Ask them to click the title of the first movie on the list which is “The Shawshank Redemption”. Without clicking, SelectorGadget will show an orange box around the element under which it says <code>h3 a</code>. This is the CSS selector we need. Now how do we use <strong>rvest</strong> to choose the selector and read the information with that CSS selector?</p>
+<div class="figure">
+<img src="images/selector_gadget.png" alt="SelectorGadget" />
+<p class="caption">SelectorGadget</p>
+</div>
 <p>Your students will have to use the function <code>html_nodes()</code> in order to read information with that style. We will use the selector that we found using SelectorGadget and use the function <code>html_text("h3 a")</code> to convert everything into text. Here’s what we need to do in order to read the titles of the movies.</p>
 <pre class="sourceCode r"><code class="sourceCode r">titles &lt;-<span class="st"> </span>imdb <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;h3 a&quot;</span>) <span class="op">%&gt;%</span>
@@ -367,14 +365,35 @@ ratings &lt;-<span class="st"> </span>ratings[<span class="op">!</span><span cla
 ## 5 Adventure, Drama, Fantasy     8.9
 ## 6              Crime, Drama     8.9</code></pre>
 <p>They can continue doing this for the rest of the top 250 movies.</p>
-<pre class="sourceCode r"><code class="sourceCode r">nba =<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;http://www.espn.com/nba/standings&quot;</span>)
-
+</div>
+<div id="exercise-3-scraping-nba-data-from-espn.com" class="section level2 unnumbered">
+<h2>Exercise 3: Scraping NBA data from ESPN.com</h2>
+<div class="tip">
+<p>Level: Difficult</p>
+</div>
+<p>In this exercise, your students will work on another scraping exercise. This time NBA standings from the espn.com website. The link to the webpage we want to scrape is <a href="http://www.espn.com/nba/standings">here</a>. Note that by the time you will see this exercise, the content of the website might have changed so be aware of that. The changes on the website will likely change the html nodes we need to use. This is the table we would like to scrape the table below:</p>
+<div class="figure">
+<img src="images/nba_espn.png" alt="NBA standings on ESPN.com" />
+<p class="caption">NBA standings on ESPN.com</p>
+</div>
+<p>Again, we’re gonna use the package <strong>rvest</strong> for this exercise. If you want to familiarize your students with the basic commands, look at the previous exercise. First, let’s use the <code>read_html()</code> function to scrape the entire webpage.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(rvest)
+<span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(stringr)
+nba =<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;http://www.espn.com/nba/standings&quot;</span>)</code></pre>
+<p>Now, we need to know the css selector for each column. Again, let’s use the <strong>SelectorGadget</strong> extension on the Chrome browswer to find the CSS selectors. More information on the <strong>SelectorGadget</strong> extension can be found in the previous exercise.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## first we will create an empty list</span>
+column &lt;-<span class="st"> </span><span class="kw">list</span>()
 <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">13</span>){
     node =<span class="st"> </span><span class="kw">paste</span>(<span class="st">&quot;.Table2__td:nth-child(&quot;</span>,i,<span class="st">&quot;) .stat-cell&quot;</span>, <span class="dt">sep=</span><span class="st">&quot;&quot;</span>)
-    <span class="kw">paste</span>(<span class="st">&quot;column&quot;</span>, i, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>) =<span class="st"> </span>nba <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">        </span><span class="kw">html_nodes</span>(<span class="st">&quot;node&quot;</span>) <span class="op">%&gt;%</span>
+    a &lt;-<span class="st"> </span>nba <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">        </span><span class="kw">html_nodes</span>(node) <span class="op">%&gt;%</span>
 <span class="st">        </span><span class="kw">html_text</span>() 
-}</code></pre>
+    column[[i]] &lt;-<span class="st"> </span>a
+}
+<span class="kw">names</span>(column) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;W&quot;</span>, <span class="st">&quot;L&quot;</span>, <span class="st">&quot;PCT&quot;</span>, <span class="st">&quot;GB&quot;</span>, <span class="st">&quot;HOME&quot;</span>, <span class="st">&quot;AWAY&quot;</span>, <span class="st">&quot;DIV&quot;</span>, <span class="st">&quot;CONF&quot;</span>, <span class="st">&quot;PPG&quot;</span>, <span class="st">&quot;OPP PPG&quot;</span>, <span class="st">&quot;DIFF&quot;</span>, <span class="st">&quot;STRK&quot;</span>, <span class="st">&quot;L10&quot;</span>)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(column, <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(column,<span class="dt">stringsAsFactors=</span><span class="ot">FALSE</span>)</code></pre>
 
 </div>
 </div>
@@ -429,6 +448,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

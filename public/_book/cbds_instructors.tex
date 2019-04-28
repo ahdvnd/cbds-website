@@ -109,22 +109,23 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
 }
 
 \setlength{\droptitle}{-2em}
+
   \title{Instructor Resources for Chromebook Data Science}
-  \pretitle{\vspace{\droptitle}\centering\huge}
+    \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-  \author{Aboozar Hadavand}
-  \preauthor{\centering\large\emph}
+    \author{Aboozar Hadavand}
+    \preauthor{\centering\large\emph}
   \postauthor{\par}
-  \predate{\centering\large\emph}
+      \predate{\centering\large\emph}
   \postdate{\par}
-  \date{February 2019}
+    \date{February 2019}
 
 \usepackage{booktabs}
 
@@ -317,6 +318,12 @@ Instructors can skip this course if students are not using Google Chromebooks. I
 \chapter*{Course 2: Google and the Cloud}\label{google}}
 \addcontentsline{toc}{chapter}{Course 2: Google and the Cloud}
 
+\hypertarget{exercise-1-sharing-google-docs-with-others}{%
+\section*{Exercise 1: Sharing Google Docs with Others}\label{exercise-1-sharing-google-docs-with-others}}
+\addcontentsline{toc}{section}{Exercise 1: Sharing Google Docs with Others}
+
+Level: Easy
+
 Editing a text file offline
 
 Each learner creates a google doc and invites another learner to the document to work collaboratively (practice different levels of access such as view/comment/edit)
@@ -339,14 +346,37 @@ Assignment: For the next session, make some slides about who you are/what you do
 \chapter*{Course 3: Organizing Data Science Projects}\label{organizing}}
 \addcontentsline{toc}{chapter}{Course 3: Organizing Data Science Projects}
 
-Go to this link, \url{https://docs.google.com/document/d/1vFQzQ6sRsMJyrqLY49qhEkxvQ0G1Zp_lMZjltpeLvUw/edit?usp=sharing}, add your name to the list, and try to make an Rmd file in Rstudio.cloud that when you knit looks similar to this google doc.
-Download the Google Sheet that you created last week as a csv file
-On R Studio Cloud, create a new project and call it my\_music\_project.
-Create all the folders necessary for a data science project.
-Go to the data folder and upload the csv file that you downloaded on your chromebook
-Create an RMarkdown document with the title Scope of the Project as the headline and a list that says objective 1, objective 2, objective 3. Make sure you save the document
+\hypertarget{exercise-1-replicating-a-google-doc-as-rmd}{%
+\section*{Exercise 1: Replicating a Google doc as Rmd}\label{exercise-1-replicating-a-google-doc-as-rmd}}
+\addcontentsline{toc}{section}{Exercise 1: Replicating a Google doc as Rmd}
 
-Find the album cover for one of the songs on your list (find the link to the cover on the web) and add the image to your Rmd document. Preview your Rmarkdown document
+Level: Easy
+
+As your students to go to the link \url{https://docs.google.com/document/d/1vFQzQ6sRsMJyrqLY49qhEkxvQ0G1Zp_lMZjltpeLvUw/edit?usp=sharing}. Then ask them to go to Rstudio.cloud and create a new project. In the new project they should create a new .Rmd file. Instead of the text in the file, they should write text/code that will replicate the Google doc file in the link above. Once the knit the file as html/Word/pdf it should look similar to the Google doc.
+
+\hypertarget{exercise-1-creating-a-new-project-and-the-workflow}{%
+\section*{Exercise 1: Creating a New Project and the Workflow}\label{exercise-1-creating-a-new-project-and-the-workflow}}
+\addcontentsline{toc}{section}{Exercise 1: Creating a New Project and the Workflow}
+
+Level: Easy
+
+This exercise is based on an exercise from the last course.
+
+Ask your students to download the Gogole Sheets that they created on musicians. Then tell them to create a new project on RStudio.cloud and call it \textbf{my\_music\_project}. Then they should create all the folders necessary for a data science project as they've leanred in the lesson. Ask them to upload the csv file they downloaded from Google Sheets in the folder \textbf{tidy\_data}.
+
+The next step is to create an Rmd file called \textbf{Readme} in the main folder with the headline \textbf{Scope of the Project} as the headline and a list that says objective 1, objective 2, objective 3. Make sure they save the document.
+
+Additionally you can ask them to find the album cover of one of the songs on their list (tell them to find the link to the cover on the web) and add the image in their Rmd file.
+
+They should use the style:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{!}\NormalTok{[Name of the image](link to the image)}
+\end{Highlighting}
+\end{Shaded}
+
+Inside the parenthesis they shoudl insert the link to the image on the web. Ask them to \emph{knit} the document and see if the image appears in the html output.
 
 \hypertarget{version-control}{%
 \chapter*{Course 4: Version Control}\label{version-control}}
@@ -456,7 +486,7 @@ Note that when we load packages we don't necessarily have to use quotation marks
 \begin{verbatim}
 ## '/Library/Frameworks/R.framework/Resources/bin/R' --no-site-file  \
 ##   --no-environ --no-save --no-restore --quiet CMD INSTALL  \
-##   '/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/RtmpBgxDis/devtools11d1c3049467f/psolymos-KnockKnockJokes-5096f51'  \
+##   '/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/RtmpxMEXlg/devtools10d317a7661af/psolymos-KnockKnockJokes-5096f51'  \
 ##   --library='/Library/Frameworks/R.framework/Versions/3.4/Resources/library'  \
 ##   --install-tests
 \end{verbatim}
@@ -488,9 +518,9 @@ This package is very simple. It basically tells you knock knock jokes. You can a
 \begin{verbatim}
 ## Knock-knock!
 ##  Who's there?
-## Norma Lee.
-##  Norma Lee who?
-## Normally I ring the doorbell!
+## Celeste.
+##  Celeste who?
+## Celeste time I'm telling you, open up.
 \end{verbatim}
 
 As an assignment (in class or at home), you can ask students to find an R package they find interesting and tell the class about it.
@@ -501,38 +531,408 @@ As an assignment (in class or at home), you can ask students to find an R packag
 
 Level: Easy
 
-Ask students to go to the my\_music\_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy\_code and save it as exploratory\_analysis. Ask them to install and load the package \textbf{dplyr} in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter. Tell your students to type in \texttt{2\ +\ 2} in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line.
+Ask students to go to the my\_music\_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy\_code and save it as exploratory\_analysis. Ask them to install and load the package \textbf{dplyr} in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter.
 
-str\_view(names, ``\^{}M'')
-str\_view(names, ``M\$'')
+Tell your students to type in \texttt{2\ +\ 2} in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line.
 
-str\_detect()
-str\_count()
-str\_subset()
+You can also remind them that they can select and highlight multiple line and use Ctrl+Enter. For instance, ask them to type these two lines in an R script file and highlight both line together and then use Ctrl+Enter.
 
-Logicals
-cbds\_names \textless{}- c(``Andre'', \ldots{}\ldots{} ``Ashley'', ``Aboozar'')
-startsWith(cbds\_names, ``An'')
-cbds\_age \textless{}- c(18, \ldots{}\ldots{}., 36)
-any(cbds\_ages \textgreater{}= 30)
-all(cbds\_ages \textgreater{}= 17)
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x <-}\StringTok{ }\DecValTok{2}
+\NormalTok{x }\OperatorTok{+}\StringTok{ }\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
 
-Go to this IMDB link: \url{https://www.imdb.com/search/title?genres=drama\&groups=top_250\&sort=user_rating,desc}
-In this exercise we are going to create a data frame that has four columns: movie name, year, rating, genre. Create repo in github called imdb\_movie\_analysis and clone it to a new project on RSC. Create all the folder structure and within your code folder, create a script file called exploratory analysis. Create a data frame with these columns and enter the data from the top 10 movies. Call your data frame top\_ten\_movies. You can choose your own column names.
-Call the column that contains the information about the movie title
-Going back to your imdb data, What is the class of the column that contains the movie names?
-What's the class of the column with the year the movie was made?
-What's the difference between the maximum and minimum rating among the top 10 movies?
-What is the dimension of your data frame?
-Change the column names to this: movie\_title, movie\_year, movie\_rating, movie\_genre
-View the first 5 rows of the data frame
-Install the package skimr and using the function skim() look at the summary of the data
-Without checking manually, see if the movie ``Groundhog Day'' is among the top 10 movies.
-Count the number of movies that are made after your birth year.
-How many of the movies are in the genre Action.
-Create a list with three elements. First element contains your top 5 most favorite movies (as characters). The second element contains the number of states you have traveled to (as.integer). Note that each element has a different size and different class and this is the beauty of lists in R.
-Call the first element of the list (your top 5 movies)
-Replace the first row of the column movie\_rating with NA. Now, what is the maximum rating in your data? Or mean?
+\begin{verbatim}
+## [1] 5
+\end{verbatim}
+
+\hypertarget{exercise-xx-basic-commands-in-r}{%
+\section*{Exercise XX: Basic Commands in R}\label{exercise-xx-basic-commands-in-r}}
+\addcontentsline{toc}{section}{Exercise XX: Basic Commands in R}
+
+Level: Easy
+
+In this exercise, we will perform some basic commands in R on simple vectors. First, ask your students to create an vector object called \texttt{ages} that contains the following numbers:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ages <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{22}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{32}\NormalTok{, }\DecValTok{17}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+After giving them the above numbers and saving the object, ask your students to use an R function to find whether there is anybody who is older than 30 years old. Tell them you simply just need a TRUE/FALSE answer to this quesion. They can use the following command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{any}\NormalTok{(ages }\OperatorTok{>}\StringTok{ }\DecValTok{30}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+Now, ask them to use an R function to find whether all ages are above 15. Again, remind them that the answer should be a simple TRUE/FALSE. They should use something like:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{all}\NormalTok{(ages }\OperatorTok{>}\StringTok{ }\DecValTok{15}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+You can further ask them to find which ages are larger than 20 For this, they can use the function \texttt{which()} to obtain the index of the element that is larger than 20 like below.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a <-}\StringTok{ }\KeywordTok{which}\NormalTok{(ages }\OperatorTok{>}\StringTok{ }\DecValTok{20}\NormalTok{)}
+\NormalTok{a}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1 4 5 7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ages[a]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 22 25 22 32
+\end{verbatim}
+
+\hypertarget{exercise-xx-creating-a-data-frame}{%
+\section*{Exercise XX: Creating a Data Frame}\label{exercise-xx-creating-a-data-frame}}
+\addcontentsline{toc}{section}{Exercise XX: Creating a Data Frame}
+
+Level: Medium
+
+In this exercise, students will learn how to create a data frame. But since they've already learned how to create a repository on Github and push things to Github, ask them to create a repositiory there called movie\_project. Further, ask them to clone the repository to an RStudio.cloud project with the same title. In the RStudio project, they should create all the necessary folders as they've learned before.
+
+We are going to create a data frame that has four columns: \texttt{title}, \texttt{year}, \texttt{rating}, and \texttt{genre} for the top 10 movies on imdb. Ask your students to go to the link \href{https://www.imdb.com/search/title?genres=drama\&groups=top_250\&sort=user_rating}{here}. Ask them to create an R script file in the folder called code and type their code there. Based on the information on the link, ask them to input the title, year, rating, and genre information for the top 10 movies in a data frame. Ask them to call the data frame \texttt{movies\_df} They should do something like:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{title <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"The Shawshank Redemption"}\NormalTok{, }\StringTok{"The Godfather"}\NormalTok{, }\StringTok{"The Dark Knight"}\NormalTok{, }\StringTok{"The Godfather: Part II"}\NormalTok{,}
+                \StringTok{"The Lord of the Rings: The Return of the King"}\NormalTok{, }\StringTok{"Pulp Fiction"}\NormalTok{, }\StringTok{"Schindler's List"}\NormalTok{,}
+                \StringTok{"12 Angry Men"}\NormalTok{, }\StringTok{"Fight Club"}\NormalTok{, }\StringTok{"The Lord of the Rings: The Fellowship of the Ring"}\NormalTok{)}
+\NormalTok{year <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1994}\NormalTok{, }\DecValTok{1972}\NormalTok{, }\DecValTok{2008}\NormalTok{, }\DecValTok{1974}\NormalTok{, }\DecValTok{2003}\NormalTok{, }\DecValTok{1994}\NormalTok{, }\DecValTok{1993}\NormalTok{, }\DecValTok{1957}\NormalTok{, }\DecValTok{1999}\NormalTok{, }\DecValTok{2001}\NormalTok{)}
+\NormalTok{rating <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\FloatTok{9.3}\NormalTok{, }\FloatTok{9.2}\NormalTok{, }\FloatTok{9.0}\NormalTok{, }\FloatTok{9.0}\NormalTok{, }\FloatTok{8.9}\NormalTok{, }\FloatTok{8.9}\NormalTok{, }\FloatTok{8.9}\NormalTok{, }\FloatTok{8.9}\NormalTok{, }\FloatTok{8.8}\NormalTok{, }\FloatTok{8.8}\NormalTok{)}
+\NormalTok{genre <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Drama"}\NormalTok{, }\StringTok{"Crime"}\NormalTok{, }\StringTok{"Action"}\NormalTok{, }\StringTok{"Crime"}\NormalTok{, }\StringTok{"Adventure"}\NormalTok{, }\StringTok{"Crime"}\NormalTok{, }\StringTok{"Biography"}\NormalTok{, }\StringTok{"Drama"}\NormalTok{, }\StringTok{"Drama"}\NormalTok{, }\StringTok{"Adventure"}\NormalTok{)}
+\NormalTok{movies_df <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(title, year, rating, genre)}
+\end{Highlighting}
+\end{Shaded}
+
+Now that they've created the data frame, ask them to show the first 4 rows of the data:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(movies_df, }\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                      title year rating  genre
+## 1 The Shawshank Redemption 1994    9.3  Drama
+## 2            The Godfather 1972    9.2  Crime
+## 3          The Dark Knight 2008    9.0 Action
+## 4   The Godfather: Part II 1974    9.0  Crime
+\end{verbatim}
+
+Ask them to call the column that contains information about movie titles.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{movies_df}\OperatorTok{$}\NormalTok{title}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] The Shawshank Redemption                         
+##  [2] The Godfather                                    
+##  [3] The Dark Knight                                  
+##  [4] The Godfather: Part II                           
+##  [5] The Lord of the Rings: The Return of the King    
+##  [6] Pulp Fiction                                     
+##  [7] Schindler's List                                 
+##  [8] 12 Angry Men                                     
+##  [9] Fight Club                                       
+## [10] The Lord of the Rings: The Fellowship of the Ring
+## 10 Levels: 12 Angry Men Fight Club Pulp Fiction ... The Shawshank Redemption
+\end{verbatim}
+
+Ask them to find the ``class'' of the columns year and genre:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{year)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "numeric"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{genre)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "factor"
+\end{verbatim}
+
+Ask your student to find the difference between the maximum and the minimum rating in the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dif <-}\StringTok{ }\KeywordTok{max}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{rating) }\OperatorTok{-}\StringTok{ }\KeywordTok{min}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{rating)}
+\NormalTok{dif}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.5
+\end{verbatim}
+
+Then ask them to find the dimension of the data frame:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dim}\NormalTok{(movies_df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 10  4
+\end{verbatim}
+
+Now ask them to change the column called \texttt{title} to \texttt{name}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colnames}\NormalTok{(movies_df)[}\DecValTok{1}\NormalTok{] <-}\StringTok{ "name"}
+\end{Highlighting}
+\end{Shaded}
+
+Without checking manually, ask them to see if the movie ``Groundhog Day'' is among the top 10 movies:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{any}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{name }\OperatorTok{==}\StringTok{ "Groundhog Day"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] FALSE
+\end{verbatim}
+
+Ask them to find the number of the movies are in the genre Drama:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{drama <-}\StringTok{ }\KeywordTok{which}\NormalTok{(movies_df}\OperatorTok{$}\NormalTok{genre }\OperatorTok{==}\StringTok{ "Drama"}\NormalTok{)}
+\KeywordTok{length}\NormalTok{(drama)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d <-}\StringTok{ }\KeywordTok{list}\NormalTok{(}\DataTypeTok{movies =} \KeywordTok{c}\NormalTok{(}\StringTok{"m1"}\NormalTok{, }\StringTok{"m2"}\NormalTok{),}
+     \DataTypeTok{states =} \DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exercise-xx-creating-lists-in-r}{%
+\section*{Exercise XX: Creating Lists in R}\label{exercise-xx-creating-lists-in-r}}
+\addcontentsline{toc}{section}{Exercise XX: Creating Lists in R}
+
+Level: Easy
+
+The beauty of lists are that you can have elements with different sizes and structures in them. For this exercise, ask your students to create a list with three elements. The first element called \texttt{places} should be a vector of the states (provinces) or countries your students have been to. The next element called \texttt{ice\_cream} should conain the name of their top two ice cream flavors. The last element called \texttt{sports} should contain their favorite sports. The list should be called \texttt{about\_me}. The code should look like:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{about_me <-}\StringTok{ }\KeywordTok{list}\NormalTok{(}\DataTypeTok{places =} \KeywordTok{c}\NormalTok{(}\StringTok{"New Mexico"}\NormalTok{, }\StringTok{"Vermont"}\NormalTok{, }\StringTok{"Washington"}\NormalTok{, }\StringTok{"California"}\NormalTok{),}
+                 \DataTypeTok{ice_creams =} \KeywordTok{c}\NormalTok{(}\StringTok{"Vanilla"}\NormalTok{, }\StringTok{"Chocolate"}\NormalTok{),}
+                 \DataTypeTok{sports =} \KeywordTok{c}\NormalTok{(}\StringTok{"Soccer"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Ask them to call the first element of the list:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{about_me[[}\DecValTok{1}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "New Mexico" "Vermont"    "Washington" "California"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## note that they can also call it by }
+\NormalTok{about_me[[}\StringTok{"places"}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "New Mexico" "Vermont"    "Washington" "California"
+\end{verbatim}
+
+Now, ask then to add another sport that they like to the element \texttt{sports}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{about_me[[}\StringTok{"sports"}\NormalTok{]][[}\DecValTok{2}\NormalTok{]] <-}\StringTok{ "Volleyball"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exercise-xx-missing-values-in-r}{%
+\section*{Exercise XX: Missing Values in R}\label{exercise-xx-missing-values-in-r}}
+\addcontentsline{toc}{section}{Exercise XX: Missing Values in R}
+
+Level: Moderate
+
+Ask your students to load the \texttt{airquality} dataset in R. Ask them to show the columns that exist in the data and find the dimension of the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colnames}\NormalTok{(airquality)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dim}\NormalTok{(airquality)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 153   6
+\end{verbatim}
+
+Ask them to look at the first 10 rows of the data:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(airquality, }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Ozone Solar.R Wind Temp Month Day
+## 1     41     190  7.4   67     5   1
+## 2     36     118  8.0   72     5   2
+## 3     12     149 12.6   74     5   3
+## 4     18     313 11.5   62     5   4
+## 5     NA      NA 14.3   56     5   5
+## 6     28      NA 14.9   66     5   6
+## 7     23     299  8.6   65     5   7
+## 8     19      99 13.8   59     5   8
+## 9      8      19 20.1   61     5   9
+## 10    NA     194  8.6   69     5  10
+\end{verbatim}
+
+Do they see any missing values in the first 10 rows? They should answer yes as the the first 10 rows clearly has some missing values. Now, ask them to use the appropriate function that checks whether the column \texttt{Temp} has missing values. How about the column \texttt{Ozone}?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{any}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(airquality}\OperatorTok{$}\NormalTok{Temp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] FALSE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{any}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(airquality}\OperatorTok{$}\NormalTok{Ozone))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+The column Ozone, contains mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island. What rows in the column \texttt{Ozone} have missing values
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{which}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(airquality}\OperatorTok{$}\NormalTok{Ozone))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1]   5  10  25  26  27  32  33  34  35  36  37  39  42  43  45  46  52
+## [18]  53  54  55  56  57  58  59  60  61  65  72  75  83  84 102 103 107
+## [35] 115 119 150
+\end{verbatim}
+
+Now, ask your students to use the appropriate function to calculate the average of the column \texttt{Ozone}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mean}\NormalTok{(airquality}\OperatorTok{$}\NormalTok{Ozone)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] NA
+\end{verbatim}
+
+If they use the code above, the answer will be \texttt{NA}. Tell them that this is due to the missing values in the column and because of that, the function \texttt{mean()} does not calculate the average. For this, to see the average, they will have to use the argument \texttt{na.rm} and set it to \texttt{TRUE}. By doing this, they will tell R to ignore the missing values and only perform the function on the non-missing values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mean}\NormalTok{(airquality}\OperatorTok{$}\NormalTok{Ozone, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 42.12931
+\end{verbatim}
+
+Now, ask them to remove all the rows containing missing values from the entire data and save the new object as \texttt{airquality\_nomissing}. Note that they should use the function \texttt{na.omit()}. What is the dimension of the new data?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{airquality_nomissing <-}\StringTok{ }\KeywordTok{na.omit}\NormalTok{(airquality)}
+\KeywordTok{dim}\NormalTok{(airquality_nomissing)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 111   6
+\end{verbatim}
+
+Finally, ask them to write code that will replace all values of the column \texttt{Wind} that are equal to \texttt{8.0} with \texttt{NA}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{airquality}\OperatorTok{$}\NormalTok{Wind[airquality}\OperatorTok{$}\NormalTok{Wind }\OperatorTok{==}\StringTok{ }\FloatTok{8.0}\NormalTok{] <-}\StringTok{ }\OtherTok{NA}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{exercise-4-reverse-a-string-function}{%
 \section*{Exercise 4: Reverse a String Function}\label{exercise-4-reverse-a-string-function}}
@@ -606,7 +1006,7 @@ Your students now can combine all the steps and create the function. This would 
 
 Level: Easy to moderate
 
-Write a function that takes user's name and returns ``Hello, Name!''
+Write a function that takes user's name and returns ``Hello, Name!'' Note that they can use the function \texttt{paste()} for pasting two or more character strings. The argument \texttt{sep} determines how the strings are going to be attached, e.g.~if \texttt{sep\ =\ "\_"} then the strings will be separated by an underline.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -656,7 +1056,8 @@ save(mpg, cyl, file=``mtcars\_objects.rda'')
 load(``mtcars\_objects.rda'')
 saveRDS(mpg, file=``mpg.rds'')
 mpg \textless{}- readRDS(``mpg.rds'')
-Write a function that takes two numbers as input and checks whether the first one is bigger than the second one.
+
+Write an encoder function that takes a word from the user and encodes each character in the alphabet to the next character and returns it. e.g.~``peach'' will be encoded to ``qfbdi''
 
 Let's create a data frame in R
 And then save the data as rda and rds and then load the data and share the data on slack
@@ -665,11 +1066,18 @@ Edit the YAML in the file.
 Load the imdb dataframe. The rest of the session we'll work with different columns in the data.
 Push all the changes to Github
 
-Write an encoder function that takes a word from the user and encodes each character in the alphabet to the next character and returns it. e.g.~``peach'' will be encoded to ``qfbdi''
+str\_view(names, ``\^{}M'')
+str\_view(names, ``M\$'')
+
+str\_detect()
+str\_count()
+str\_subset()
 
 \hypertarget{exercise-1-tidying-nba-finals-data}{%
 \section*{Exercise 1: Tidying NBA Finals Data}\label{exercise-1-tidying-nba-finals-data}}
 \addcontentsline{toc}{section}{Exercise 1: Tidying NBA Finals Data}
+
+Level: Difficult
 
 In this exercise we will work with \href{https://www.kaggle.com/daverosenman/nba-finals-team-stats}{NBA final teams stats} on Kaggle. There is two .csv files. The `champs.csv' file contains game-by-game team totals for the championship team from every finals game between 1980 and 2017. The `runnerups.csv' contains game-by-game team totals for the runner-up team from every finals game between 1980 and 2017. The 1980 NBA Finals was the first Finals series since the NBA added the three point line.
 
@@ -691,11 +1099,8 @@ The first step is to import the data into R. Since importing .csv files is in a 
 \begin{verbatim}
 ## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )
 \end{verbatim}
 
@@ -712,11 +1117,8 @@ The first step is to import the data into R. Since importing .csv files is in a 
 \begin{verbatim}
 ## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )
 ## See spec(...) for full column specifications.
 \end{verbatim}
@@ -839,7 +1241,7 @@ The interesting thing about date objects is that we can do algebraic operations 
 \end{Shaded}
 
 \begin{verbatim}
-## Time difference of 7478 days
+## Time difference of 7525 days
 \end{verbatim}
 
 Well, then can then easily convert the answer to years by dividing the number by 365 or they can use the function \texttt{time\_length()} again from the \textbf{lubridate} package.
@@ -851,7 +1253,7 @@ Well, then can then easily convert the answer to years by dividing the number by
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 20.48767
+## [1] 20.61644
 \end{verbatim}
 
 Now that your studetns are comfortable calculating age based on a birthdate and current date, ask them to write a function that will take a person's birthdate and will return the age in years. This should be easy given the solution above.
@@ -869,7 +1271,7 @@ Now that your studetns are comfortable calculating age based on a birthdate and 
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 36.86301
+## [1] 36.99178
 \end{verbatim}
 
 Tell your students to add a warning message that is shown to user warning them to enter date as ``yyyy-md-dd''. So the function should show a warning message after the calculation is done.
@@ -892,7 +1294,7 @@ Tell your students to add a warning message that is shown to user warning them t
 \end{verbatim}
 
 \begin{verbatim}
-## [1] 36.86301
+## [1] 36.99178
 \end{verbatim}
 
 Next, you can tell your students to modify the function so that the user determines whether age should be reported in years, months, days, hours, etc. In other words, the \texttt{unit} argumenst should be entered by user but its default value is in days.
@@ -916,7 +1318,7 @@ Next, you can tell your students to modify the function so that the user determi
 \end{verbatim}
 
 \begin{verbatim}
-## [1] 322920
+## [1] 324048
 \end{verbatim}
 
 As the last step, show this function to your students and ask them to gues what the ouput will look like without running the function in R.
@@ -940,7 +1342,7 @@ As the last step, show this function to your students and ask them to gues what 
 \end{verbatim}
 
 \begin{verbatim}
-## [1] "You are 36.9 years old"
+## [1] "You are 37 years old"
 \end{verbatim}
 
 \hypertarget{visualization}{%
@@ -971,11 +1373,8 @@ The first step is to import the data into R. Since importing .csv files is in a 
 \begin{verbatim}
 ## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )
 \end{verbatim}
 
@@ -992,11 +1391,8 @@ The first step is to import the data into R. Since importing .csv files is in a 
 \begin{verbatim}
 ## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )
 ## See spec(...) for full column specifications.
 \end{verbatim}
@@ -1096,7 +1492,7 @@ Now, we are going to do some data visualization using the package \textbf{ggplot
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-34-1.pdf}
+\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-61-1.pdf}
 
 Now, ask them two repeat the pervious graph but this time, have the bar plot (with different colors) for champion and runner up teams. In other words, they will have to use the argument \texttt{fill} and make it equal to the newly created column \texttt{rank}. Then ask them to interpret the graph. What is obvious is that champion teams do a much better job at three-pointers.
 
@@ -1110,7 +1506,7 @@ Now, ask them two repeat the pervious graph but this time, have the bar plot (wi
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-35-1.pdf}
+\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-62-1.pdf}
 
 Now, ask them to find the right function in \textbf{ggplot2} that makes the Y axix ticks (the years) with an angle (45 degrees). They will have to use the \texttt{theme()} argument and inside it they will have to use the \texttt{element\_text()} function to specify the angle.
 
@@ -1120,7 +1516,7 @@ Now, ask them to find the right function in \textbf{ggplot2} that makes the Y ax
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-36-1.pdf}
+\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-63-1.pdf}
 
 In the last exercises, we are going to work with scatter plots. Ask your students have a scatter plot with number of 3 pointers per game on the vertical axis and year on the horizontal axis. Note that the two columns they need to use are \texttt{TP} and \texttt{Year}. Ask them to have two different colors for champions and runner ups. Ask them to make the point sizes equal to 1.
 
@@ -1134,7 +1530,7 @@ In the last exercises, we are going to work with scatter plots. Ask your student
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-37-1.pdf}
+\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-64-1.pdf}
 
 Your students are now required to use the \texttt{geom\_smooth()} function from the \textbf{ggplot2} package. This function help your students in seeing patterns. This is an example of the \texttt{geom\_smooth()} function.
 
@@ -1154,11 +1550,328 @@ geom\_smooth() and stat\_smooth() are effectively aliases: they both use the sam
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-38-1.pdf}
+\includegraphics{cbds_instructors_files/figure-latex/unnamed-chunk-65-1.pdf}
 
 \hypertarget{getting-data}{%
 \chapter*{Course 8: Getting Data}\label{getting-data}}
 \addcontentsline{toc}{chapter}{Course 8: Getting Data}
+
+\hypertarget{exercise-1-saving-a-data-frame-as-an-rds-file}{%
+\section*{Exercise 1: Saving a data frame as an rds file}\label{exercise-1-saving-a-data-frame-as-an-rds-file}}
+\addcontentsline{toc}{section}{Exercise 1: Saving a data frame as an rds file}
+
+Level: Easy
+
+In this exercise, your student will learn how to save a data frame as a rds or rda file. Before, this exercise remind your students about the best practices of web scraping. Too much scraping at higher rates will put pressure on the website servers. There is a great article \href{https://www.scrapehero.com/how-to-prevent-getting-blacklisted-while-scraping/}{here} about the best practices of web scraping.
+
+First ask your students to load the dataset \textbf{mtcars} and save it to an object called \texttt{data}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data <-}\StringTok{ }\NormalTok{mtcars}
+\KeywordTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+\end{verbatim}
+
+Now ask them to simply save the data frame \texttt{data} as an rds file with the same name. They should use a code similar to
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{saveRDS}\NormalTok{(data, }\DataTypeTok{file =} \StringTok{"data.rds"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+You can also ask them to save the data frame as an rda file:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{save}\NormalTok{(data, }\DataTypeTok{file=}\StringTok{"data.rda"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exercise-2-scraping-imdb-data}{%
+\section*{Exercise 2: Scraping IMDB data}\label{exercise-2-scraping-imdb-data}}
+\addcontentsline{toc}{section}{Exercise 2: Scraping IMDB data}
+
+Level: Difficult
+
+In this exercise, your students will practice working with the package \textbf{rvest} and scraping data from the web. We'll more specifically scrape top 250 movies from the website IMDB. This information can be found on this \href{https://www.imdb.com/search/title?genres=drama\&groups=top_250\&sort=user_rating}{link}. Ask your students to load the packages \textbf{rvest}, \textbf{tidyverse} and \textbf{stringr}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(rvest)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(stringr)}
+\end{Highlighting}
+\end{Shaded}
+
+The first step in using the rvest package and scraping data from the web is to read the content of the webpage we're interested in. For this, we use the function \texttt{read\_html()} from the package \textbf{rvest}. The address above only contains the first 50 movies but we can use similar process for the pages that come after.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{imdb <-}\StringTok{ }\KeywordTok{read_html}\NormalTok{(}\StringTok{"https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The object \texttt{imdb} contains all the html content of the page in the form of an \textbf{xml} document that contains the \emph{head} and the \emph{body} of the page. Now, here is the important part. Let's say we would like to make a data frame that has 4 columns. The first column is the name of the movies, the second column is their ratings, the third column is their genres, and the last column is the year the movies are made. We want to make this data frame for the top 50 movies. For scraping different components of a webpage we need to know the CSS \emph{selector} of the specific part of the html file they're scraping.
+
+We are going to use a Chrome Extension called SelectorGadget. SelectorGadget is an open source tool that makes CSS selector generation and discovery on complicated sites a breeze. They should install the Chrome Extension. They can download SelectorGadget Chrome Extension \href{https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb?hl=en}{here}. They can learn more about the SelectorGadget in this \href{https://vimeo.com/52055686}{video}.
+
+So how do we use the SelectorGadget to find the movie title? After installing the extension, ask your students to drag the bookmarklet to their bookmark bar, then go to any page and launch it. A box will open in the bottom right of the website. Ask them to click the title of the first movie on the list which is ``The Shawshank Redemption''. Without clicking, SelectorGadget will show an orange box around the element under which it says \texttt{h3\ a}. This is the CSS selector we need. Now how do we use \textbf{rvest} to choose the selector and read the information with that CSS selector?
+
+\begin{figure}
+\centering
+\includegraphics{./images/selector_gadget.png}
+\caption{SelectorGadget}
+\end{figure}
+
+Your students will have to use the function \texttt{html\_nodes()} in order to read information with that style. We will use the selector that we found using SelectorGadget and use the function \texttt{html\_text("h3\ a")} to convert everything into text. Here's what we need to do in order to read the titles of the movies.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{titles <-}\StringTok{ }\NormalTok{imdb }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{html_nodes}\NormalTok{(}\StringTok{"h3 a"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{html_text}\NormalTok{()}
+\NormalTok{titles}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "The Shawshank Redemption"                         
+##  [2] "The Godfather"                                    
+##  [3] "The Dark Knight"                                  
+##  [4] "The Godfather: Part II"                           
+##  [5] "The Lord of the Rings: The Return of the King"    
+##  [6] "Pulp Fiction"                                     
+##  [7] "Schindler's List"                                 
+##  [8] "12 Angry Men"                                     
+##  [9] "Fight Club"                                       
+## [10] "The Lord of the Rings: The Fellowship of the Ring"
+## [11] "Forrest Gump"                                     
+## [12] "The Lord of the Rings: The Two Towers"            
+## [13] "Goodfellas"                                       
+## [14] "One Flew Over the Cuckoo's Nest"                  
+## [15] "Seven Samurai"                                    
+## [16] "Interstellar"                                     
+## [17] "City of God"                                      
+## [18] "Saving Private Ryan"                              
+## [19] "The Green Mile"                                   
+## [20] "Life Is Beautiful"                                
+## [21] "Se7en"                                            
+## [22] "Léon: The Professional"                           
+## [23] "The Silence of the Lambs"                         
+## [24] "It's a Wonderful Life"                            
+## [25] "Dangal"                                           
+## [26] "Whiplash"                                         
+## [27] "The Intouchables"                                 
+## [28] "The Prestige"                                     
+## [29] "The Departed"                                     
+## [30] "The Pianist"                                      
+## [31] "Gladiator"                                        
+## [32] "American History X"                               
+## [33] "The Lion King"                                    
+## [34] "Cinema Paradiso"                                  
+## [35] "Grave of the Fireflies"                           
+## [36] "Apocalypse Now"                                   
+## [37] "Casablanca"                                       
+## [38] "The Great Dictator"                               
+## [39] "Modern Times"                                     
+## [40] "City Lights"                                      
+## [41] "Your Name."                                       
+## [42] "Django Unchained"                                 
+## [43] "3 Idiots"                                         
+## [44] "Taare Zameen Par"                                 
+## [45] "Babam ve Oglum"                                   
+## [46] "The Lives of Others"                              
+## [47] "Oldeuboi"                                         
+## [48] "American Beauty"                                  
+## [49] "Braveheart"                                       
+## [50] "Once Upon a Time in America"                      
+## [51] " "                                                
+## [52] " "                                                
+## [53] " "                                                
+## [54] " "                                                
+## [55] " "
+\end{verbatim}
+
+The object \texttt{titles} now contains the name of the movies. It should have 50 elements but it has 55. If they check the object they will realize that the last 5 elements are empty. So we should get rid of them. This is what we should do.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{titles <-}\StringTok{ }\NormalTok{titles[titles }\OperatorTok{!=}\StringTok{ " "}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+Note that the object is a vector. We will create separate vectors for ratings, genres, and years and then will at the end create a data frame that contains all the 4 vectors. Now, we will use the SelectorGadget to find the CSS selector for years. The selector for years is \texttt{h3\ span}. So similar to
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{years <-}\StringTok{ }\NormalTok{imdb }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_nodes}\NormalTok{(}\StringTok{"h3 span"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_text}\NormalTok{()}
+\NormalTok{years}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   [1] "1."     "(1994)" "2."     "(1972)" "3."     "(2008)" "4."    
+##   [8] "(1974)" "5."     "(2003)" "6."     "(1994)" "7."     "(1993)"
+##  [15] "8."     "(1957)" "9."     "(1999)" "10."    "(2001)" "11."   
+##  [22] "(1994)" "12."    "(2002)" "13."    "(1990)" "14."    "(1975)"
+##  [29] "15."    "(1954)" "16."    "(2014)" "17."    "(2002)" "18."   
+##  [36] "(1998)" "19."    "(1999)" "20."    "(1997)" "21."    "(1995)"
+##  [43] "22."    "(1994)" "23."    "(1991)" "24."    "(1946)" "25."   
+##  [50] "(2016)" "26."    "(2014)" "27."    "(2011)" "28."    "(2006)"
+##  [57] "29."    "(2006)" "30."    "(2002)" "31."    "(2000)" "32."   
+##  [64] "(1998)" "33."    "(1994)" "34."    "(1988)" "35."    "(1988)"
+##  [71] "36."    "(1979)" "37."    "(1942)" "38."    "(1940)" "39."   
+##  [78] "(1936)" "40."    "(1931)" "41."    "(2016)" "42."    "(2012)"
+##  [85] "43."    "(2009)" "44."    "(2007)" "45."    "(2005)" "46."   
+##  [92] "(2006)" "47."    "(2003)" "48."    "(1999)" "49."    "(1995)"
+##  [99] "50."    "(1984)"
+\end{verbatim}
+
+If they look at the object \texttt{years}, they will notice the peculiar content. The years are in parentheses and there are some other numbers as well. Then their next task is to write code that will only keep inside the parentheses. This is a bit tricky so feel free to give the code below. The function \texttt{str\_match\_all()} and the regex (regular expression) inside it will return everything inside the parentheses but since the output is in the form of a list, they can use the function \texttt{unlist()} to convert the output to a vector. Finally to convert the vector to numbers (since the outuput is the years movies are made and we want them to be numbers) we use the function \texttt{as.numeric()} as they have used many times.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{years <-}\StringTok{ }\NormalTok{years }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{str_match_all}\NormalTok{(}\StringTok{"(?<=}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{().+?(?=}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{))"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{unlist}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{as.numeric}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+Object \texttt{years} should now look like a clean vector of the years movies are made.
+
+\begin{verbatim}
+##  [1] 1994 1972 2008 1974 2003 1994 1993 1957 1999 2001 1994 2002 1990 1975
+## [15] 1954 2014 2002 1998 1999 1997 1995 1994 1991 1946 2016 2014 2011 2006
+## [29] 2006 2002 2000 1998 1994 1988 1988 1979 1942 1940 1936 1931 2016 2012
+## [43] 2009 2007 2005 2006 2003 1999 1995 1984
+\end{verbatim}
+
+The following code will scrape genres and ratings from the website.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{genre =}\StringTok{ }\NormalTok{imdb }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_nodes}\NormalTok{(}\StringTok{".genre"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_text}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\CommentTok{# getting rid of the "\textbackslash{}n" in the strings}
+\StringTok{    }\KeywordTok{str_replace_all}\NormalTok{(}\StringTok{"[}\CharTok{\textbackslash{}r\textbackslash{}n}\StringTok{]"}\NormalTok{ , }\StringTok{""}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\CommentTok{# getting rid of the extra spaces in both ends of the strings}
+\StringTok{    }\KeywordTok{str_trim}\NormalTok{(}\DataTypeTok{side =} \KeywordTok{c}\NormalTok{(}\StringTok{"both"}\NormalTok{))}
+
+\NormalTok{ratings =}\StringTok{ }\NormalTok{imdb }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_nodes}\NormalTok{(}\StringTok{".mode-advanced strong , .runtime , .genre"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{html_text}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{as.numeric}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in function_list[[k]](value): NAs introduced by coercion
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# There are some empty elements so we get rid of them here}
+\NormalTok{ratings <-}\StringTok{ }\NormalTok{ratings[}\OperatorTok{!}\KeywordTok{is.na}\NormalTok{(ratings)]}
+\end{Highlighting}
+\end{Shaded}
+
+Now that all the data is downloaded, ask your students to combine all the vectors in a data frame called \texttt{imdb\_df}. They should know to use the \texttt{data.frame()} function in order to do that.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{imdb_df =}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(titles, years, genre, ratings, }\DataTypeTok{stringsAsFactors =} \OtherTok{FALSE}\NormalTok{)}
+\KeywordTok{head}\NormalTok{(imdb_df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                          titles years
+## 1                      The Shawshank Redemption  1994
+## 2                                 The Godfather  1972
+## 3                               The Dark Knight  2008
+## 4                        The Godfather: Part II  1974
+## 5 The Lord of the Rings: The Return of the King  2003
+## 6                                  Pulp Fiction  1994
+##                       genre ratings
+## 1                     Drama     9.3
+## 2              Crime, Drama     9.2
+## 3      Action, Crime, Drama     9.0
+## 4              Crime, Drama     9.0
+## 5 Adventure, Drama, Fantasy     8.9
+## 6              Crime, Drama     8.9
+\end{verbatim}
+
+They can continue doing this for the rest of the top 250 movies.
+
+\hypertarget{exercise-3-scraping-nba-data-from-espn.com}{%
+\section*{Exercise 3: Scraping NBA data from ESPN.com}\label{exercise-3-scraping-nba-data-from-espn.com}}
+\addcontentsline{toc}{section}{Exercise 3: Scraping NBA data from ESPN.com}
+
+Level: Difficult
+
+In this exercise, your students will work on another scraping exercise. This time NBA standings from the espn.com website. The link to the webpage we want to scrape is \href{http://www.espn.com/nba/standings}{here}. Note that by the time you will see this exercise, the content of the website might have changed so be aware of that. The changes on the website will likely change the html nodes we need to use. This is the table we would like to scrape the table below:
+
+\begin{figure}
+\centering
+\includegraphics{./images/nba_espn.png}
+\caption{NBA standings on ESPN.com}
+\end{figure}
+
+Again, we're gonna use the package \textbf{rvest} for this exercise. If you want to familiarize your students with the basic commands, look at the previous exercise. First, let's use the \texttt{read\_html()} function to scrape the entire webpage.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(rvest)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(stringr)}
+\NormalTok{nba =}\StringTok{ }\KeywordTok{read_html}\NormalTok{(}\StringTok{"http://www.espn.com/nba/standings"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Now, we need to know the css selector for each column. Again, let's use the \textbf{SelectorGadget} extension on the Chrome browswer to find the CSS selectors. More information on the \textbf{SelectorGadget} extension can be found in the previous exercise.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## first we will create an empty list}
+\NormalTok{column <-}\StringTok{ }\KeywordTok{list}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\DecValTok{13}\NormalTok{)\{}
+\NormalTok{    node =}\StringTok{ }\KeywordTok{paste}\NormalTok{(}\StringTok{".Table2__td:nth-child("}\NormalTok{,i,}\StringTok{") .stat-cell"}\NormalTok{, }\DataTypeTok{sep=}\StringTok{""}\NormalTok{)}
+\NormalTok{    a <-}\StringTok{ }\NormalTok{nba }\OperatorTok{%>%}\StringTok{ }
+\StringTok{        }\KeywordTok{html_nodes}\NormalTok{(node) }\OperatorTok{%>%}
+\StringTok{        }\KeywordTok{html_text}\NormalTok{() }
+\NormalTok{    column[[i]] <-}\StringTok{ }\NormalTok{a}
+\NormalTok{\}}
+\KeywordTok{names}\NormalTok{(column) <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"W"}\NormalTok{, }\StringTok{"L"}\NormalTok{, }\StringTok{"PCT"}\NormalTok{, }\StringTok{"GB"}\NormalTok{, }\StringTok{"HOME"}\NormalTok{, }\StringTok{"AWAY"}\NormalTok{, }\StringTok{"DIV"}\NormalTok{, }\StringTok{"CONF"}\NormalTok{, }\StringTok{"PPG"}\NormalTok{, }\StringTok{"OPP PPG"}\NormalTok{, }\StringTok{"DIFF"}\NormalTok{, }\StringTok{"STRK"}\NormalTok{, }\StringTok{"L10"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(column, }\DataTypeTok{stringsAsFactors =} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(column,}\DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{analysis}{%
 \chapter*{Course 9: Data Analysis}\label{analysis}}
@@ -1171,6 +1884,8 @@ geom\_smooth() and stat\_smooth() are effectively aliases: they both use the sam
 \hypertarget{getting-jobs}{%
 \chapter*{Course 11: Getting a Job in Data Science}\label{getting-jobs}}
 \addcontentsline{toc}{chapter}{Course 11: Getting a Job in Data Science}
+
+a project on reading indeed jobs in data science
 
 \hypertarget{random}{%
 \chapter*{Course 11: Random Stuff}\label{random}}
@@ -1227,11 +1942,11 @@ Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., 
 \end{Highlighting}
 \end{Shaded}
 
-\begin{table}
+\begin{table}[t]
 
 \caption{\label{tab:nice-tab}Here is a nice table!}
 \centering
-\begin{tabular}[t]{rrrrl}
+\begin{tabular}{rrrrl}
 \toprule
 Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \midrule
