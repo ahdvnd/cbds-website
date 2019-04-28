@@ -1,6 +1,6 @@
-baseurl = "/"
+baseurl = "https://www.clouddatascience.org/"
 languageCode = "en"
-title = "VEX Bootstrap 4 Product Landing Page"
+title = "Cloud-Based Data Science"
 theme = "vex-hugo"
 
 [params]
@@ -17,7 +17,7 @@ theme = "vex-hugo"
 
   # Navigation bar informations
   [params.navbar]
-    logo = "Vex"
+    logo = "CBDS"
     [[params.navbar.menu]]
       link = "#"
       text = "HOME"
