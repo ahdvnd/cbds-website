@@ -999,3 +999,30 @@ Untracked files:
 	[31m../../style.css[m
 	[31m../../widget.php[m
 
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/98065216/console06/62E9029E[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .Rproj.user/98065216/console06/62E9029E[m
+	[32mmodified:   .Rproj.user/98065216/console06/62E9029E.env[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/98065216/console06/62E9029E[m
+
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .

@@ -25,22 +25,25 @@ theme = "vex-hugo"
       link = "#about"
       text = "ABOUT"
     [[params.navbar.menu]]
+      link = "./cbds_instructors/_book/index.html"
+      text = "RESOURCES"
+    [[params.navbar.menu]]
       link = "#service"
-      text = "SERVICES"
+      text = "DONATE"
     [[params.navbar.menu]]
       link = "#contact"
       text = "CONTACT"
 
   # Header
   [params.header]
-    title = "Believe in Technology, Make the change"
-    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
+    title = "Cloud-based Data Science"
+    text = "Chromebook Data Science (CBDS) is a free, massive open online educational program offered through Leanpub to help anyone who can read, write, and use a computer to move into data science, the number one rated job."
     [params.header.image]
-      path = "images/watch.png"
+      path = "images/logo-01.png"
       alt = "Watch"
     [params.header.button]
-      link = "#about"
-      text = "Buy Now With $199"
+      link = "https://leanpub.com/universities/set/jhu/chromebook-data-science"
+      text = "Take our courses today!"
 
   # Features
   [params.features]
@@ -83,13 +86,13 @@ theme = "vex-hugo"
       alt = "Watch"
 
   [params.feature_list]
-    title = "Why Choose Apple Watch"
+    title = "Our Approach"
     [[params.feature_list.items]]
       image = "images/showcase/showcase-4.png"
-      title = "Lorem ipsum dolor sit amet."
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
-      button_link = ""
-      button_text = "Check Features"
+      title = "We minimize computer costs"
+      text = "We have developed an online program that lets students do data science using only a web browser and cheap computers like Chromebooks."
+      button_link = "https://www.google.com/chromebook/"
+      button_text = "Learn more about Google Chromebook"
     [[params.feature_list.items]]
       image = "images/showcase/showcase-3.png"
       title = "Lorem ipsum dolor sit amet."
@@ -98,7 +101,7 @@ theme = "vex-hugo"
       button_text = "Check Features"
 
   [params.gallery]
-    title = "Checkout some amazing Shorts"
+    title = "Our Partners"
     # Set the image directory to use as base
     directory = "images/showcase"
     # Set the images to show in the gallery
@@ -111,22 +114,22 @@ theme = "vex-hugo"
     button_text = "Subscribe"
 
   [params.testimonials]
-    title = "Watch Review"
+    title = "Our Team"
     [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
+      text = "Jeff Leek is a professor of biostatistics at Johns Hopkins University Bloomberg School of Public Health. He has taught millions of people data science online through massive online open courses. He is also an associate professor at Johns Hopkins Bloomberg School of Public Health and co-director of the Johns Hopkins Data Science Lab."
+      name = "Jeffrey Leek"
+      position = "Director"
+      image = "images/team/Jeff.png"
     [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
+      text = "Ashley K.G. Johnson is the program administrator for CBDS+ at the Johns Hopkins Bloomberg School of Public Health. She facilitates tutoring for program participants, manages recruitment efforts and the development of corporate and non-profit partnerships. Ashley is a Baltimore native and a graduate of Loyola University Maryland."
+      name = "Ashley Johnson"
+      position = "Program Administrator"
+      image = "images/team/ashley.png"
     [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
+      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence."
+      name = "Aboozar Hadavand"
+      position = "Curriculum Lead"
+      image = "images/team/aboozar.jpg"
     [params.testimonials.button]
       link = ""
       text = "Grab You Product Now"
