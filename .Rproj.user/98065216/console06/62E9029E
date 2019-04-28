@@ -1,0 +1,1315 @@
+]0;~/random/cbds-website[?1034hAboozars-MacBook-Pro:cbds-website Hadzzz$ [KAboozars-MacBook-Pro:cbds-website Hadzzz$ git remote -v
+origin	git@github.com:ahdvnd/hugo-fresh.git (fetch)
+origin	git@github.com:ahdvnd/hugo-fresh.git (push)
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git remote remove -[Korigin
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git remote remove origin-v[K
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git remote add origin https://github.com/ahdvnd/cbds-website.git
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git commit -m "first commit"
+U	README.md
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git remote -v
+origin	https://github.com/ahdvnd/cbds-website.git (fetch)
+origin	https://github.com/ahdvnd/cbds-website.git (push)
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git remo[K[K[K[Kstatus
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	[32mnew file:   ../../.circleci/config.yml[m
+	[32mnew file:   ../../LICENSE[m
+	[32mnew file:   ../../assets/bulma/bulma.sass[m
+	[32mnew file:   ../../assets/bulma/sass/base/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/base/generic.sass[m
+	[32mnew file:   ../../assets/bulma/sass/base/helpers.sass[m
+	[32mnew file:   ../../assets/bulma/sass/base/minireset.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/breadcrumb.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/card.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/dropdown.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/level.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/media.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/menu.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/message.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/modal.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/navbar.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/pagination.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/panel.sass[m
+	[32mnew file:   ../../assets/bulma/sass/components/tabs.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/box.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/button.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/container.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/content.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/form.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/icon.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/image.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/notification.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/other.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/progress.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/table.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/tag.sass[m
+	[32mnew file:   ../../assets/bulma/sass/elements/title.sass[m
+	[32mnew file:   ../../assets/bulma/sass/grid/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/grid/columns.sass[m
+	[32mnew file:   ../../assets/bulma/sass/grid/tiles.sass[m
+	[32mnew file:   ../../assets/bulma/sass/layout/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/layout/footer.sass[m
+	[32mnew file:   ../../assets/bulma/sass/layout/hero.sass[m
+	[32mnew file:   ../../assets/bulma/sass/layout/section.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/_all.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/animations.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/controls.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/derived-variables.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/functions.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/initial-variables.sass[m
+	[32mnew file:   ../../assets/bulma/sass/utilities/mixins.sass[m
+	[32mnew file:   ../../assets/fresh/core.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_animations.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_buttons.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_cards.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_colors.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_dropdowns.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_footer.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_forms.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_hero.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_navbar.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_responsive.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_sections.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_sidebar.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_testimonials.scss[m
+	[32mnew file:   ../../assets/fresh/partials/_utils.scss[m
+	[32mnew file:   ../../assets/style.sass[m
+	[32mnew file:   ../../exampleSite/config.yaml[m
+	[32mnew file:   ../../exampleSite/content/.gitkeep[m
+	[32mnew file:   ../../images/screenshot.png[m
+	[32mnew file:   ../../images/tn.png[m
+	[32mnew file:   ../../layouts/_default/baseof.html[m
+	[32mnew file:   ../../layouts/_default/single.html[m
+	[32mnew file:   ../../layouts/index.html[m
+	[32mnew file:   ../../layouts/partials/css.html[m
+	[32mnew file:   ../../layouts/partials/footer.html[m
+	[32mnew file:   ../../layouts/partials/hero-body.html[m
+	[32mnew file:   ../../layouts/partials/hero-footer.html[m
+	[32mnew file:   ../../layouts/partials/hero.html[m
+	[32mnew file:   ../../layouts/partials/javascript.html[m
+	[32mnew file:   ../../layouts/partials/meta.html[m
+	[32mnew file:   ../../layouts/partials/navbar-clone.html[m
+	[32mnew file:   ../../layouts/partials/navbar.html[m
+	[32mnew file:   ../../layouts/partials/section1.html[m
+	[32mnew file:   ../../layouts/partials/section2.html[m
+	[32mnew file:   ../../layouts/partials/section3.html[m
+	[32mnew file:   ../../layouts/partials/section4.html[m
+	[32mnew file:   ../../layouts/partials/section5.html[m
+	[32mnew file:   ../../layouts/partials/sidebar.html[m
+	[32mnew file:   ../../layouts/partials/single/content.html[m
+	[32mnew file:   ../../layouts/partials/single/sidebar.html[m
+	[32mnew file:   ../../layouts/partials/single/single.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle1.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle2.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle3.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle4.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle5.html[m
+	[32mnew file:   ../../layouts/shortcodes/subtitle6.html[m
+	[32mnew file:   ../../layouts/shortcodes/title1.html[m
+	[32mnew file:   ../../layouts/shortcodes/title2.html[m
+	[32mnew file:   ../../layouts/shortcodes/title3.html[m
+	[32mnew file:   ../../layouts/shortcodes/title4.html[m
+	[32mnew file:   ../../layouts/shortcodes/title5.html[m
+	[32mnew file:   ../../layouts/shortcodes/title6.html[m
+	[32mnew file:   cbds-website.Rproj[m
+	[32mnew file:   config.toml[m
+	[32mnew file:   content/.gitkeep[m
+	[32mnew file:   content/post/2015-07-23-r-rmarkdown.Rmd[m
+	[32mnew file:   content/post/2015-07-23-r-rmarkdown.html[m
+	[32mnew file:   index.Rmd[m
+	[32mnew file:   public/apple-touch-icon-precomposed.png[m
+	[32mnew file:   public/categories/index.xml[m
+	[32mnew file:   public/categories/r/index.xml[m
+	[32mnew file:   public/css/animate.css[m
+	[32mnew file:   public/css/bootstrap.min-3.css[m
+	[32mnew file:   public/css/bootstrap.min.css[m
+	[32mnew file:   public/css/font-awesome.min.css[m
+	[32mnew file:   public/css/magnific-popup.css[m
+	[32mnew file:   public/css/owl.carousel.css[m
+	[32mnew file:   public/css/owl.theme.css[m
+	[32mnew file:   public/css/owl.transitions.css[m
+	[32mnew file:   public/css/responsive.css[m
+	[32mnew file:   public/css/style.css[m
+	[32mnew file:   public/css/themefisher-fonts.css[m
+	[32mnew file:   public/favicon.ico[m
+	[32mnew file:   public/fonts/themefisher-font.eot[m
+	[32mnew file:   public/fonts/themefisher-font.svg[m
+	[32mnew file:   public/fonts/themefisher-font.ttf[m
+	[32mnew file:   public/fonts/themefisher-font.woff[m
+	[32mnew file:   public/images/about-img.jpg[m
+	[32mnew file:   public/images/about.jpg[m
+	[32mnew file:   public/images/avater.png[m
+	[32mnew file:   public/images/big-showcase.png[m
+	[32mnew file:   public/images/call-to-action-2.jpg[m
+	[32mnew file:   public/images/call-to-action.jpg[m
+	[32mnew file:   public/images/call-to-action2.jpg[m
+	[32mnew file:   public/images/counter-box.png[m
+	[32mnew file:   public/images/header-bg-2.jpg[m
+	[32mnew file:   public/images/header-bg.jpg[m
+	[32mnew file:   public/images/header-overlay.png[m
+	[32mnew file:   public/images/logo-2.png[m
+	[32mnew file:   public/images/logo-3.png[m
+	[32mnew file:   public/images/logo-4.png[m
+	[32mnew file:   public/images/logo.png[m
+	[32mnew file:   public/images/logo1.png[m
+	[32mnew file:   public/images/map.png[m
+	[32mnew file:   public/images/showcase/showcase-1.png[m
+	[32mnew file:   public/images/showcase/showcase-2.png[m
+	[32mnew file:   public/images/showcase/showcase-3.png[m
+	[32mnew file:   public/images/showcase/showcase-4.png[m
+	[32mnew file:   public/images/showcase/showcase-5.png[m
+	[32mnew file:   public/images/showcase/showcase-6.png[m
+	[32mnew file:   public/images/showcase/showcase-7.png[m
+	[32mnew file:   public/images/showcase/showcase-8.png[m
+	[32mnew file:   public/images/watch-2.png[m
+	[32mnew file:   public/images/watch.jpg[m
+	[32mnew file:   public/images/watch.png[m
+	[32mnew file:   public/index.html[m
+	[32mnew file:   public/index.xml[m
+	[32mnew file:   public/js/bootstrap.min.js[m
+	[32mnew file:   public/js/jquery.form.js[m
+	[32mnew file:   public/js/jquery.lwtCountdown-1.0.js[m
+	[32mnew file:   public/js/jquery.magnific-popup.min.js[m
+	[32mnew file:   public/js/jquery.nav.js[m
+	[32mnew file:   public/js/jquery.sticky.js[m
+	[32mnew file:   public/js/jquery.validate.min.js[m
+	[32mnew file:   public/js/main.js[m
+	[32mnew file:   public/js/min/main.min.js[m
+	[32mnew file:   public/js/owl.carousel.js[m
+	[32mnew file:   public/js/owl.carousel.min.js[m
+	[32mnew file:   public/js/plugins.js[m
+	[32mnew file:   public/js/vendor/jquery-2.1.1.min.js[m
+	[32mnew file:   public/js/vendor/modernizr-2.6.2.min.js[m
+	[32mnew file:   public/js/wow.min.js[m
+	[32mnew file:   public/post/2015-07-23-r-rmarkdown.Rmd[m
+	[32mnew file:   public/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png[m
+	[32mnew file:   public/post/index.xml[m
+	[32mnew file:   public/scss/.gitignore[m
+	[32mnew file:   public/scss/responsive.scss[m
+	[32mnew file:   public/scss/style.scss[m
+	[32mnew file:   public/sitemap.xml[m
+	[32mnew file:   public/tags/index.xml[m
+	[32mnew file:   public/tags/plot/index.xml[m
+	[32mnew file:   public/tags/r-markdown/index.xml[m
+	[32mnew file:   public/tags/regression/index.xml[m
+	[32mnew file:   static/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png[m
+	[32mnew file:   themes/vex-hugo/LICENSE[m
+	[32mnew file:   themes/vex-hugo/README.md[m
+	[32mnew file:   themes/vex-hugo/archetypes/default.md[m
+	[32mnew file:   themes/vex-hugo/exampleSite/config.toml[m
+	[32mnew file:   themes/vex-hugo/exampleSite/content/.gitkeep[m
+	[32mnew file:   themes/vex-hugo/images/screenshot.png[m
+	[32mnew file:   themes/vex-hugo/images/tn.png[m
+	[32mnew file:   themes/vex-hugo/layouts/404.html[m
+	[32mnew file:   themes/vex-hugo/layouts/_default/list.html[m
+	[32mnew file:   themes/vex-hugo/layouts/_default/single.html[m
+	[32mnew file:   themes/vex-hugo/layouts/index.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/call-to-action.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/feature-list.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/features.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/footer.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/gallery.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/header.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/meta.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/navbar.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/promo.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/scripts.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/stylesheets.html[m
+	[32mnew file:   themes/vex-hugo/layouts/partials/testimonials.html[m
+	[32mnew file:   themes/vex-hugo/static/apple-touch-icon-precomposed.png[m
+	[32mnew file:   themes/vex-hugo/static/css/animate.css[m
+	[32mnew file:   themes/vex-hugo/static/css/bootstrap.min-3.css[m
+	[32mnew file:   themes/vex-hugo/static/css/bootstrap.min.css[m
+	[32mnew file:   themes/vex-hugo/static/css/font-awesome.min.css[m
+	[32mnew file:   themes/vex-hugo/static/css/magnific-popup.css[m
+	[32mnew file:   themes/vex-hugo/static/css/owl.carousel.css[m
+	[32mnew file:   themes/vex-hugo/static/css/owl.theme.css[m
+	[32mnew file:   themes/vex-hugo/static/css/owl.transitions.css[m
+	[32mnew file:   themes/vex-hugo/static/css/responsive.css[m
+	[32mnew file:   themes/vex-hugo/static/css/style.css[m
+	[32mnew file:   themes/vex-hugo/static/css/themefisher-fonts.css[m
+	[32mnew file:   themes/vex-hugo/static/favicon.ico[m
+	[32mnew file:   themes/vex-hugo/static/fonts/themefisher-font.eot[m
+	[32mnew file:   themes/vex-hugo/static/fonts/themefisher-font.svg[m
+	[32mnew file:   themes/vex-hugo/static/fonts/themefisher-font.ttf[m
+	[32mnew file:   themes/vex-hugo/static/fonts/themefisher-font.woff[m
+	[32mnew file:   themes/vex-hugo/static/images/about-img.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/about.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/avater.png[m
+	[32mnew file:   themes/vex-hugo/static/images/big-showcase.png[m
+	[32mnew file:   themes/vex-hugo/static/images/call-to-action-2.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/call-to-action.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/call-to-action2.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/counter-box.png[m
+	[32mnew file:   themes/vex-hugo/static/images/header-bg-2.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/header-bg.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/header-overlay.png[m
+	[32mnew file:   themes/vex-hugo/static/images/logo-2.png[m
+	[32mnew file:   themes/vex-hugo/static/images/logo-3.png[m
+	[32mnew file:   themes/vex-hugo/static/images/logo-4.png[m
+	[32mnew file:   themes/vex-hugo/static/images/logo.png[m
+	[32mnew file:   themes/vex-hugo/static/images/logo1.png[m
+	[32mnew file:   themes/vex-hugo/static/images/map.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-1.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-2.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-3.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-4.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-5.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-6.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-7.png[m
+	[32mnew file:   themes/vex-hugo/static/images/showcase/showcase-8.png[m
+	[32mnew file:   themes/vex-hugo/static/images/watch-2.png[m
+	[32mnew file:   themes/vex-hugo/static/images/watch.jpg[m
+	[32mnew file:   themes/vex-hugo/static/images/watch.png[m
+	[32mnew file:   themes/vex-hugo/static/js/bootstrap.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.form.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.lwtCountdown-1.0.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.magnific-popup.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.nav.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.sticky.js[m
+	[32mnew file:   themes/vex-hugo/static/js/jquery.validate.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/main.js[m
+	[32mnew file:   themes/vex-hugo/static/js/min/main.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/owl.carousel.js[m
+	[32mnew file:   themes/vex-hugo/static/js/owl.carousel.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/plugins.js[m
+	[32mnew file:   themes/vex-hugo/static/js/vendor/jquery-2.1.1.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/vendor/modernizr-2.6.2.min.js[m
+	[32mnew file:   themes/vex-hugo/static/js/wow.min.js[m
+	[32mnew file:   themes/vex-hugo/static/scss/.gitignore[m
+	[32mnew file:   themes/vex-hugo/static/scss/responsive.scss[m
+	[32mnew file:   themes/vex-hugo/static/scss/style.scss[m
+	[32mnew file:   themes/vex-hugo/theme.toml[m
+	[32mnew file:   ../../resources/_gen/assets/sass/style.sass_cf66e63debe6917c04534d6c7b66f623.content[m
+	[32mnew file:   ../../resources/_gen/assets/sass/style.sass_cf66e63debe6917c04534d6c7b66f623.json[m
+	[32mnew file:   ../../static/css/icons.css[m
+	[32mnew file:   ../../static/fonts/fontawesome-webfont.woff2[m
+	[32mnew file:   ../../static/fonts/fontello.woff[m
+	[32mnew file:   ../../static/fonts/simple-line-icons.ttf[m
+	[32mnew file:   ../../static/images/favicon.png[m
+	[32mnew file:   ../../static/images/illustrations/faces/1.png[m
+	[32mnew file:   ../../static/images/illustrations/faces/2.png[m
+	[32mnew file:   ../../static/images/illustrations/faces/3.png[m
+	[32mnew file:   ../../static/images/illustrations/icons/doc-sync.svg[m
+	[32mnew file:   ../../static/images/illustrations/icons/laptop-cloud.svg[m
+	[32mnew file:   ../../static/images/illustrations/icons/laptop-globe.svg[m
+	[32mnew file:   ../../static/images/illustrations/icons/mobile-feed.svg[m
+	[32mnew file:   ../../static/images/illustrations/icons/mouse-globe.svg[m
+	[32mnew file:   ../../static/images/illustrations/icons/plug-cloud.svg[m
+	[32mnew file:   ../../static/images/illustrations/mockups/app-mockup.png[m
+	[32mnew file:   ../../static/images/illustrations/worker.png[m
+	[32mnew file:   ../../static/images/illustrations/worker.svg[m
+	[32mnew file:   ../../static/images/loaders/audio.svg[m
+	[32mnew file:   ../../static/images/loaders/ball-triangle.svg[m
+	[32mnew file:   ../../static/images/loaders/bars.svg[m
+	[32mnew file:   ../../static/images/loaders/circles.svg[m
+	[32mnew file:   ../../static/images/loaders/grid.svg[m
+	[32mnew file:   ../../static/images/loaders/hearts.svg[m
+	[32mnew file:   ../../static/images/loaders/oval.svg[m
+	[32mnew file:   ../../static/images/loaders/puff.svg[m
+	[32mnew file:   ../../static/images/loaders/rings.svg[m
+	[32mnew file:   ../../static/images/loaders/spinning-circles.svg[m
+	[32mnew file:   ../../static/images/loaders/tail-spin.svg[m
+	[32mnew file:   ../../static/images/loaders/three-dots.svg[m
+	[32mnew file:   ../../static/images/logos/bulma.svg[m
+	[32mnew file:   ../../static/images/logos/clients/gutwork.svg[m
+	[32mnew file:   ../../static/images/logos/clients/infinite.svg[m
+	[32mnew file:   ../../static/images/logos/clients/kromo.svg[m
+	[32mnew file:   ../../static/images/logos/clients/systek.svg[m
+	[32mnew file:   ../../static/images/logos/clients/tribe.svg[m
+	[32mnew file:   ../../static/images/logos/fresh-alt.svg[m
+	[32mnew file:   ../../static/images/logos/fresh-square.svg[m
+	[32mnew file:   ../../static/images/logos/fresh-white-alt.svg[m
+	[32mnew file:   ../../static/images/logos/fresh-white.svg[m
+	[32mnew file:   ../../static/images/logos/fresh.svg[m
+	[32mnew file:   ../../static/images/logos/icon-logo.svg[m
+	[32mnew file:   ../../static/images/logos/made-with-bulma.png[m
+	[32mnew file:   ../../static/js/fresh.js[m
+	[32mnew file:   ../../static/js/jquery.panelslider.min.js[m
+	[32mnew file:   ../../theme.toml[m
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	[31mboth added:      ../../README.md[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	[31mdeleted:    ../../Desktop/cbds-site/archetypes/default.md[m
+	[31mdeleted:    ../../Desktop/cbds-site/config.yaml[m
+	[31mdeleted:    ../../Desktop/cbds-site/resources/_gen/assets/sass/style.sass_5ad6f408b0e3e473c748aac88af0ea18.content[m
+	[31mdeleted:    ../../Desktop/cbds-site/resources/_gen/assets/sass/style.sass_5ad6f408b0e3e473c748aac88af0ea18.json[m
+	[31mdeleted:    ../../Desktop/cbds-site/themes/hugo-fresh[m
+	[31mdeleted:    ../../Desktop/metrics_intro/01-introduction.md[m
+	[31mdeleted:    ../../Desktop/metrics_intro/02-what-is-econometrics.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/atusact_2016.dat[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/atusresp_2016.dat[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/atusrost_2016.dat[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/capstone_project_1.Rmd[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/capstone_project_1.html[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/capstone_project_1.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/00_what_is_R.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/04_functions.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/04_lists.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/06_website.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/10_help_in_R.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/00_what_is_R/00_R_what_is_R-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/00_what_is_R/00_R_what_is_R-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/00_what_is_R/00_R_what_is_R.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/01_intro_to_packages/01_R_intro_to_packages-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/02_objects/02_R_objects-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/03_basic_commands/03_R_basic_commands.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_functions/04_R_functions_00.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_functions/04_R_functions_01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_functions/04_R_functions_02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_functions/04_R_functions_03 (1).png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_functions/04_R_functions_04.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_lists/04_R_lists-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_lists/04_R_lists-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_lists/04_R_lists-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_lists/04_R_lists-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/04_lists/04_R_lists-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/05_logicals/05_R_logicals-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/06_website/05_R_website_Page_02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/06_website/05_R_website_Page_05.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/06_website/05_R_website_Page_11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/06_website/05_R_website_Page_12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/06_website/05_R_website_Page_13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/manuscript/resources/images/10_help_in_R/10_R_help_in_R-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/scripts/03_basic_commands_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/scripts/04_functions_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/scripts/04_lists_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_R/scripts/06_website.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_chromebookintro[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/.gitignore[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/README.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/cds_dataanalysis.Rproj[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/00_purpose.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/01_translating_questions.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/02_identifying_data.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/03_how_to_know.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/04_descriptive.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/05_exploratory.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/06_inferential.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/07_prediction_ml.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/08_workflow.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/09_pipelines.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/Book.txt[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/00_purpose/00_dataanalysis_purpose.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/01_translating_questions/01_dataanalysis_translating_questions.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/02_identifying_data/02_dataanalysis_identifying_data.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/03_how_to_know/03_dataanalysis_how_to_know.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-25.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-26.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-27.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-28.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-29.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-30.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-31.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-32.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-33.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-34.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-35.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-36.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-37.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-38.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-39.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-40.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-41.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-42.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-43.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-44.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-45.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-46.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-47.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-48.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-49.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-50.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-51.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-52.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/04_descriptive/04_dataanalysis_descriptive.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/05_exploratory/05_dataanalysis_exploratory.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-25.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-26.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-27.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-28.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-29.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-30.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-31.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-32.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-33.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-34.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-35.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-36.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-37.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-38.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-39.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-40.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-41.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-42.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-43.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-44.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-45.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-46.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-47.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-48.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-49.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-50.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-51.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-52.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/06_inferential/06_datanalysis_inferential.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-25.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-26.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-27.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-28.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-29.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-30.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-31.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-32.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-33.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-34.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-35.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-36.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-37.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-38.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-39.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-40.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-41.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-42.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-43.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-44.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-45.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-46.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-47.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-48.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-49.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/07_prediction_ml/07_dataanalysis_prediction_ml.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/08_workflow/08_dataanalysis_workflow.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-25.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/manuscript/resources/images/09_pipelines/09_dataanalysis_pipelines.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/metrics/course_status.rds[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/00_purpose_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/01_translating_questions_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/02_identifying_data_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/03_how_to_know_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/04_descriptive_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/05_exploratory_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/06_inferential_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/07_prediction_ml_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/08_workflow_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_dataanalysis/scripts/09_pipelines_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/00_what_is_a_chromebook.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/01_chromebrowser.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/02_chromeos.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/06_offline_access.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/06_working_offline.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/07_chromebook_security.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/11_getting_help.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/12_updating.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/000_what_is_a_chromebook/000_gettingstarted_what_is_a_chromebook.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-08.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-09.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/00_chromebrowser/00_gettingstarted_chromebrowser.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-03.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-04.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-05.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-07.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-08.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/01_chromebookapps/01_gettingstarted_chromebookapps.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/02_suggestedapps/02_gettingstarted_suggestedapps-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/03_filestorage/03_gettingstarted_filestorage-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/03_filestorage/03_gettingstarted_filestorage-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/03_filestorage/03_gettingstarted_filestorage-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/03_filestorage/03_gettingstarted_filestorage-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/03_filestorage/03_gettingstarted_filestorage-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/04_common_issues/04_gettingstarted_common_issues.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/05_updating/05_gettingstarted_updating-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/manuscript/resources/images/05_updating/05_gettingstarted_updating-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/02_chromeos_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/03_android_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/06_working_offline_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/07_chromebook_security_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/99_suggestedapps_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_gettingstarted/scripts/99_updating_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/.Rapp.history[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/.gitignore[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/.gitignore.rtf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/IntroPage_cdsintro.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/README.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/cds_introduction.Rproj[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/002_why_automated.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/03_google_account.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/07_rstudio_cloud.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/08_googledocs.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/10_datacamp.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/Book.txt[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/001_program_philosophy/001_intro_program_philosophy-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/001_program_philosophy/001_intro_program_philosophy-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/001_program_philosophy/001_intro_program_philosophy-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/001_program_philosophy/001_intro_program_philosophy-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/002_why_automated/002_cdsintro_why_automated-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/003_data_science_process/003_cdsintro_data_science_process-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/00_welcome/00_cdsintro_welcome-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/01_finding_help/01_cdsintro_finding_help-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/01_finding_help/01_cdsintro_finding_help-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/01_finding_help/01_cdsintro_finding_help-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/01_finding_help/01_cdsintro_finding_help.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/02_account_setup/02_cdsintro_account_setup-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/02_account_setup/02_cdsintro_account_setup-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/02_account_setup/02_cdsintro_account_setup-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/02_account_setup/02_cdsintro_account_setup.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-03.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-04.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-05.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-09.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/03_google_account/03_cdsintro_google_account.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-19.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-33.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-36.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-39.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-40.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-41.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-42.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-43.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/04_other_accounts/04_cdsintro_other_accounts.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/05_intro_to_project (1)/05_cdsintro_intro_to_project-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/05_intro_to_project (1)/05_cdsintro_intro_to_project-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/05_intro_to_project (1)/05_cdsintro_intro_to_project-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/05_intro_to_project (1)/05_cdsintro_intro_to_project-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/05_intro_to_project (1)/05_cdsintro_intro_to_project.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-16.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-24.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/06_googlesheets/06_cdsintro_googlesheets-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-15.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-18.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-20.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-21.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-22.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-23.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/07_rstudio_cloud/07_cdsintro_rstudio_cloud-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/08_googledocs/08_cdsintro_googledocs.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-6.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/09_googleslides/09_cdsintro_googleslides-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-12.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/manuscript/resources/images/10_datacamp/10_cdsintro_datacamp-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/metrics/youtube_uploads.rda[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/001_program_philosophy_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/02_account_setup_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/03_google_account_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/05_intro_to_project_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/06_googlesheets_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/10_datacamp_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cds_intro/scripts/BasicPlotting.R[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/cloud[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/.httr-oauth-SUSPENDED[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/data.Rproj[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/02_csvfiles.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/04_googlesheets.html[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/05_exporting.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/06_unconventional.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/07_findingdata.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/08_safety.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/09_privacy.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/00_whatisdata/00_data_whatisdata-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/00_whatisdata/00_data_whatisdata-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/01_getting_data/01_data_gettingdata_04.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_04.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_05.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_08.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_09.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/02_csvfiles/02_data_csvfiles_11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_03.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_07.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/04_googlesheets/04_data_googlesheets_08.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/05_exporting/05_data_exporting_02.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/05_exporting/05_data_exporting_06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/05_exporting/05_data_exporting_08.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/06_unconventional/06_data_unconventional_01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/06_unconventional/06_data_unconventional_03.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/06_unconventional/06_data_unconventional_05.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/06_unconventional/06_data_unconventional_06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-0.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/08_safety/08_data_safety.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-11.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-5.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-8.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy-9.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/manuscript/resources/images/09_privacy/09_data_privacy.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/scripts/00_whatisdata_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/scripts/01_getting_data_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/scripts/02_csvfiles_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/data/scripts/08_safety_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/.gitignore[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/01_tidydata.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-01.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-03.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-06.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-07.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-10.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-13.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-14.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/01_tidydata/01_data_tidydata-17.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata-1.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata-2.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata-3.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata-4.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata-7.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/manuscript/resources/images/02_untidydata/02_data_untidydata.pdf[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/scripts/01_tidydata_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/datacleaning/scripts/03_untidydata_script.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/fileorganization[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/gettinghelp/.gitignore[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/gettinghelp/manuscript/00_introduction.md[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/gettinghelp/manuscript/img/00_introduction/00_google.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/gettinghelp/manuscript/img/00_introduction/01_autocomplete.png[m
+	[31mdeleted:    ../../Google Drive/Research/Chromebook/ChromebookCurriculum/github[m
+	[31mdeleted:    ../cbds-site/archetypes/default.md[m
+	[31mdeleted:    ../cbds-site/config.yaml[m
+	[31mdeleted:    ../cbds-site/themes/hugo-fresh[m
+	[31mdeleted:    ../howtographql[m
+	[31mmodified:   ../learnstorybook.com[m (modified content)
+	[31mmodified:   ../website/README.md[m
+	[31mmodified:   ../website/src/assets/icons/graphql.svg[m
+	[31mmodified:   ../website/src/assets/icons/hamburger.svg[m
+	[31mmodified:   ../website/src/assets/icons/howtographql.svg[m
+	[31mmodified:   ../website/src/assets/icons/next-chapter.svg[m
+	[31mmodified:   ../website/src/assets/icons/relay.svg[m
+	[31mmodified:   ../website/src/components/App.tsx[m
+	[31mmodified:   ../website/src/components/Banner.tsx[m
+	[31mmodified:   ../website/src/components/Checkmark.tsx[m
+	[31mmodified:   ../website/src/components/Logo.tsx[m
+	[31mmodified:   ../website/src/components/Nav.tsx[m
+	[31mmodified:   ../website/src/components/Quiz/Quiz.tsx[m
+	[31mmodified:   ../website/src/components/Quiz/Unlocked.tsx[m
+	[31mmodified:   ../website/src/components/Search/Results.tsx[m
+	[31mmodified:   ../website/src/components/Search/SearchInput.tsx[m
+	[31mmodified:   ../website/src/components/Steps/ChooseTutorialStep.tsx[m
+	[31mmodified:   ../website/src/components/Steps/DottedListItem.tsx[m
+	[31mmodified:   ../website/src/components/Steps/OptionalDottedListItem.tsx[m
+	[31mmodified:   ../website/src/components/Steps/OptionalSteps.tsx[m
+	[31mmodified:   ../website/src/components/Steps/Steps.tsx[m
+	[31mmodified:   ../website/src/components/Steps/TutorialTitleStep.tsx[m
+	[31mmodified:   ../website/src/components/Success/Result.tsx[m
+	[31mmodified:   ../website/src/components/home/Chooser.tsx[m
+	[31mmodified:   ../website/src/components/home/ContentOverview.tsx[m
+	[31mmodified:   ../website/src/components/home/Footer.tsx[m
+	[31mmodified:   ../website/src/components/home/Intro.tsx[m
+	[31mmodified:   ../website/src/components/home/IntroSteps.tsx[m
+	[31mmodified:   ../website/static/howtographql-01.png[m
+	[31mmodified:   ../website/static/mstile-150x150.png[m
+	[31mmodified:   ../website/yarn.lock[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../../.CFUserTextEncoding[m
+	[31m../../.Rapp.history[m
+	[31m../../.Trash/[m
+	[31m../../.Xauthority[m
+	[31m../../.android/[m
+	[31m../../.anyconnect[m
+	[31m../../.aws/[m
+	[31m../../.bash_history[m
+	[31m../../.bash_sessions/[m
+	[31m../../.bundle/[m
+	[31m../../.cache/[m
+	[31m../../.composer/[m
+	[31m../../.config/[m
+	[31m../../.cups/[m
+	[31m../../.dropbox/[m
+	[31m../../.drush/[m
+	[31m../../.expo/[m
+	[31m../../.gem/[m
+	[31m../../.gitconfig[m
+	[31m../../.gitignore[m
+	[31m../../.java.policy[m
+	[31m../../.jspm/[m
+	[31m../../.local/[m
+	[31m../../.mysql_history[m
+	[31m../../.network_backups/[m
+	[31m../../.node-gyp/[m
+	[31m../../.node_repl_history[m
+	[31m../../.npm/[m
+	[31m../../.openshot_qt/[m
+	[31m../../.oracle_jre_usage/[m
+	[31m../../.profile[m
+	[31m../../.profile.macports-saved_2016-01-19_at_22:20:55[m
+	[31m../../.psql_history[m
+	[31m../../.putty/[m
+	[31m../../.rnd[m
+	[31m../../.rstudio-desktop/[m
+	[31m../../.ssh/[m
+	[31m../../.subversion/[m
+	[31m../../.v8flags.5.1.281.84.Hadzzz.json[m
+	[31m../../.v8flags.5.1.281.84.root.json[m
+	[31m../../.viminfo[m
+	[31m../../.vscode/[m
+	[31m../../.yarnrc[m
+	[31m../../Applications/[m
+	[31m../../CREATE[m
+	[31m../../Desktop/..Rapp.history.icloud[m
+	[31m../../Desktop/.localized[m
+	[31m../../Desktop/1607.00698.pdf[m
+	[31m../../Desktop/1Password Emergency Kit A3-2H57QM-my.pdf[m
+	[31m../../Desktop/Bates_PurposefulWork_040419_DIGITAL_lg.pdf[m
+	[31m../../Desktop/Can Online Delivery Increase Access to Education? .pdf[m
+	[31m../../Desktop/ContentServer.asp-5.pdf[m
+	[31m../../Desktop/DfLoXOZW4AAP4jN.jpg[m
+	[31m../../Desktop/DqzOgOeV4AA78xZ.jpg[m
+	[31m../../Desktop/FutureOfLearning_i.pdf[m
+	[31m../../Desktop/Image-1.png[m
+	[31m../../Desktop/Job_Market_Guide_and_Advice_ToC.pdf[m
+	[31m../../Desktop/NewGenerationStudent_i.pdf[m
+	[31m../../Desktop/PublicationBiasMain.pdf[m
+	[31m../../Desktop/SSRN-id2746337.pdf[m
+	[31m../../Desktop/Screen Shot 2017-01-04 at 12.41.58 AM.png[m
+	[31m../../Desktop/Screen Shot 2017-01-04 at 12.42.47 AM.png[m
+	[31m../../Desktop/Screen Shot 2017-11-14 at 9.50.04 AM.png[m
+	[31m../../Desktop/Screen Shot 2018-01-29 at 12.52.29 PM.png[m
+	[31m../../Desktop/Screen Shot 2018-03-04 at 9.08.25 AM.png[m
+	[31m../../Desktop/Screen Shot 2018-05-07 at 8.22.16 PM.png[m
+	[31m../../Desktop/Screen Shot 2018-06-03 at 2.17.50 PM.png[m
+	[31m../../Desktop/Screen Shot 2018-07-23 at 1.14.52 PM.png[m
+	[31m../../Desktop/Screen Shot 2019-03-10 at 7.10.29 PM.png[m
+	[31m../../Desktop/Screen Shot 2019-04-01 at 12.24.44 PM.png[m
+	[31m../../Desktop/Screen Shot 2019-04-03 at 1.07.48 PM.png[m
+	[31m../../Desktop/Screen Shot 2019-04-04 at 11.08.20 AM.png[m
+	[31m../../Desktop/Screen Shot 2019-04-11 at 12.32.39 PM.png[m
+	[31m../../Desktop/Screen Shot 2019-04-21 at 7.55.50 PM.png[m
+	[31m../../Desktop/SelfControl.app.app/[m
+	[31m../../Desktop/aer.20150986.pdf[m
+	[31m../../Desktop/all_publications.pdf[m
+	[31m../../Desktop/annurev-economics-080217-053402.pdf[m
+	[31m../../Desktop/breiman.pdf[m
+	[31m../../Desktop/can_onlie_delivery_increase_access.pdf[m
+	[31m../../Desktop/cbds_student_projects/[m
+	[31m../../Desktop/college_majors/[m
+	[31m../../Desktop/crsra_data/[m
+	[31m../../Desktop/crsra_import.R[m
+	[31m../../Desktop/data/[m
+	[31m../../Desktop/hammermesh_replication_in_labor_econ.pdf[m
+	[31m../../Desktop/iras_new_coursera_data/[m
+	[31m../../Desktop/journal.pmed.0020124.PDF[m
+	[31m../../Desktop/machine_learning_economics.pdf[m
+	[31m../../Desktop/metrics-intro/[m
+	[31m../../Desktop/mitro-passwords.csv[m
+	[31m../../Desktop/movies/[m
+	[31m../../Desktop/overlap matching/[m
+	[31m../../Desktop/profile_2.jpg[m
+	[31m../../Desktop/rddsga.pdf[m
+	[31m../../Desktop/sample_prop_weight.R[m
+	[31m../../Desktop/sarah_photos/[m
+	[31m../../Desktop/text-as-data.pdf[m
+	[31m../../Desktop/the ethics of redistribution.pdf[m
+	[31m../../Documents/[m
+	[31m../../Downloads/[m
+	[31m../../Dropbox (Old)/[m
+	[31m../../Dropbox/[m
+	[31m../../Gemfile[m
+	[31m../../GitBook/[m
+	[31m../../GitHub/[m
+	[31m../../Google Drive/8 Spring Volleyball 2019.gsheet[m
+	[31m../../Google Drive/8 Spring Volleyball 2019.xlsx[m
+	[31m../../Google Drive/Aboozar_Hadavand.jpg[m
+	[31m../../Google Drive/Art of Metrics Survey (Responses).gsheet[m
+	[31m../../Google Drive/Art of Metrics Survey.gform[m
+	[31m../../Google Drive/Baltimore!.gsheet[m
+	[31m../../Google Drive/Baltimore!.xlsx[m
+	[31m../../Google Drive/Bdh.gdoc[m
+	[31m../../Google Drive/Brochure (1).gdoc[m
+	[31m../../Google Drive/Brochure.gdoc[m
+	[31m../../Google Drive/CBDS/[m
+	[31m../../Google Drive/Canvass About Us.gdoc[m
+	[31m../../Google Drive/CanvassLogo.png[m
+	[31m../../Google Drive/Cars.gsheet[m
+	[31m../../Google Drive/Chromebook Data Science Project.xml[m
+	[31m../../Google Drive/Class Structure Survey.gform[m
+	[31m../../Google Drive/Copy of Project Contract.doc.gdoc[m
+	[31m../../Google Drive/Courses.pdf[m
+	[31m../../Google Drive/Creating Engaging Videos coursera.gslides[m
+	[31m../../Google Drive/Desktop Items/[m
+	[31m../../Google Drive/Documents/[m
+	[31m../../Google Drive/Hadavand Aboozar 201811171030380347.pdf[m
+	[31m../../Google Drive/Lookbook.gslides[m
+	[31m../../Google Drive/Microsoft Word - Mohammad CV  New.1.docx[m
+	[31m../../Google Drive/Microsoft Word - Mohammad CV  New.1.gdoc[m
+	[31m../../Google Drive/Mohammad's files/[m
+	[31m../../Google Drive/Onboarding notes.gdoc[m
+	[31m../../Google Drive/Project Contract.doc[m
+	[31m../../Google Drive/Project Contract.doc.gdoc[m
+	[31m../../Google Drive/Project proposal.gdoc[m
+	[31m../../Google Drive/Proposed Session: New Evidence on Job-Skill Mismatch in the Labor Market.gdoc[m
+	[31m../../Google Drive/RBE MS20180051-1 R3's report.gdoc[m
+	[31m../../Google Drive/Random/[m
+	[31m../../Google Drive/Rank Order of Authors.gform[m
+	[31m../../Google Drive/Report.gdoc[m
+	[31m../../Google Drive/Research/All Data/[m
+	[31m../../Google Drive/Research/All Proposals/[m
+	[31m../../Google Drive/Research/Campus Policing/[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/Default Dataset.csv[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/atussum_2016.dat[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/billboard_lyrics_1964-2015.csv[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/final_project_answers.Rmd[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/final_project_answers.html[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/final_project_answers.pdf[m
+	[31m../../Google Drive/Research/Chromebook/ChromebookCurriculum/final_project_antonio.Rmd[m
+	[31m../../Google Drive/Research/Chromebook/cbds_reports/[m
+	[31m../../Google Drive/Research/Chromebook/chromebook_website/[m
+	[31m../../Google Drive/Research/Coursera/[m
+	[31m../../Google Drive/Research/DiscriminationUpwork/[m
+	[31m../../Google Drive/Research/Econ Publication/[m
+	[31m../../Google Drive/Research/Old Research/[m
+	[31m../../Google Drive/Research/Op-eds/[m
+	[31m../../Google Drive/Research/PSweighting/[m
+	[31m../../Google Drive/Research/Specific Aims STTR 2.9.19.gdoc[m
+	[31m../../Google Drive/Research/Subjective Research Credibility/[m
+	[31m../../Google Drive/Research/cbds_instructors/[m
+	[31m../../Google Drive/Research/citec/[m
+	[31m../../Google Drive/Research/modern_economist/[m
+	[31m../../Google Drive/Research/other_hopkins_related/[m
+	[31m../../Google Drive/Research/random_analysis/[m
+	[31m../../Google Drive/Research/refereeing_value/[m
+	[31m../../Google Drive/Research/talks/[m
+	[31m../../Google Drive/Research/~$shCtrEqGrowth Proposal.docx[m
+	[31m../../Google Drive/Resume.gdoc[m
+	[31m../../Google Drive/Teaching/[m
+	[31m../../Google Drive/The art of metrics/[m
+	[31m../../Google Drive/Tidy text.gslides[m
+	[31m../../Google Drive/Transfer_of_ownership_chromebook.gform[m
+	[31m../../Google Drive/Untitled Diagram (1).html[m
+	[31m../../Google Drive/Untitled Diagram.html[m
+	[31m../../Google Drive/Untitled document (1).gdoc[m
+	[31m../../Google Drive/Untitled document (2).gdoc[m
+	[31m../../Google Drive/Untitled document (3).gdoc[m
+	[31m../../Google Drive/Untitled document (4).gdoc[m
+	[31m../../Google Drive/Untitled document.gdoc[m
+	[31m../../Google Drive/Untitled presentation.gslides[m
+	[31m../../Google Drive/Untitled spreadsheet (1).gsheet[m
+	[31m../../Google Drive/Untitled spreadsheet (2).gsheet[m
+	[31m../../Google Drive/Untitled spreadsheet (3).gsheet[m
+	[31m../../Google Drive/Untitled spreadsheet.gsheet[m
+	[31m../../Google Drive/adobe_draw/[m
+	[31m../../Google Drive/adoption_resources.gdoc[m
+	[31m../../Google Drive/baltimore_places_to_eat.gsheet[m
+	[31m../../Google Drive/cbds_budget (1).gsheet[m
+	[31m../../Google Drive/cbds_budget.gsheet[m
+	[31m../../Google Drive/coauthorship_form_moocs (1).pdf[m
+	[31m../../Google Drive/comments on how to use chromebook.gdoc[m
+	[31m../../Google Drive/cover_letter.gdoc[m
+	[31m../../Google Drive/cv_template_2017.gdoc[m
+	[31m../../Google Drive/ds_jobs_baltimore (1).gsheet[m
+	[31m../../Google Drive/econ_job_market.gslides[m
+	[31m../../Google Drive/facebook-aboozarhadavand.zip[m
+	[31m../../Google Drive/job_market_2018/[m
+	[31m../../Google Drive/job_talk_rice_draft_version.gslides[m
+	[31m../../Google Drive/motivated belief.gdoc[m
+	[31m../../Google Drive/my copy.gsheet[m
+	[31m../../Google Drive/nlsy var names.gsheet[m
+	[31m../../Google Drive/sample_ari.gslides[m
+	[31m../../Google Drive/sample_data.gsheet[m
+	[31m../../Google Drive/survey-Thomas family.gform[m
+	[31m../../Google Drive/survey.gsheet[m
+	[31m../../Google Drive/survey_diagram.html[m
+	[31m../../Google Drive/tablestructure.png[m
+	[31m../../Google Drive/talks/[m
+	[31m../../Google Drive/temp.dat[m
+	[31m../../Google Drive/usc_talk_moocs.gslides[m
+	[31m../../Google Drive/volleyball attendance.gdoc[m
+	[31m../../Library/[m
+	[31m../../Lissy/[m
+	[31m../../Makefile[m
+	[31m../../Movies/[m
+	[31m../../Music/[m
+	[31m../../Pictures/[m
+	[31m../../Public/[m
+	[31m../../Sites/[m
+	[31m../../ahdvnd/[m
+	[31m../../atconfig[m
+	[31m../../clickdata[m
+	[31m../../composer.phar[m
+	[31m../../config.h[m
+	[31m../../config.log[m
+	[31m../../config.status[m
+	[31m../../config_p.h[m
+	[31m../../databases/[m
+	[31m../../header1.php[m
+	[31m../../hs_err_pid1130.log[m
+	[31m../../hs_err_pid84071.log[m
+	[31m../../iCloud Drive (Archive) - 1/[m
+	[31m../../iCloud Drive (Archive)/[m
+	[31m../site-landing/[m
+	[31m../storybook/[m
+	[31m../website/src/components/OldBanner.tsx[m
+	[31m../../shortcodes.php[m
+	[31m../../starterkit/[m
+	[31m../../style.css[m
+	[31m../../widget.php[m
+
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ 
