@@ -28,7 +28,7 @@ theme = "vex-hugo"
       link = "./_book/index.html"
       text = "RESOURCES"
     [[params.navbar.menu]]
-      link = "#service"
+      link = "https://www.patreon.com/"
       text = "DONATE"
     [[params.navbar.menu]]
       link = "#contact"
