@@ -1219,3 +1219,23 @@ remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5) 
 To https://github.com/ahdvnd/cbds-website.git
    322436c..a2bb2d4  master -> master
 ]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git push[K[K[K[K[K m[Kcommit -m "let's try one more things with the instructor sr[K[Kresources"
+[master 1210087] let's try one more things with the instructor resources
+ 5 files changed, 19 insertions(+), 5 deletions(-)
+ create mode 160000 public/cbds_instructors
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git push
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 1.17 KiB | 0 bytes/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To https://github.com/ahdvnd/cbds-website.git
+   a2bb2d4..1210087  master -> master
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git ad .
+git: 'ad' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	add
+	am
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
