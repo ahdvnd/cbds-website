@@ -95,10 +95,22 @@ theme = "vex-hugo"
       button_text = "Learn more about Google Chromebook"
     [[params.feature_list.items]]
       image = "images/showcase/showcase-3.png"
-      title = "Lorem ipsum dolor sit amet."
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
+      title = "Free courses"
+      text = "Our CBDS program is entirely online and you can take it for free. You can take the classes any time and at your own pace. You get a certificate for each CBDS online class from Leanpub."
       button_link = ""
-      button_text = "Check Features"
+      button_text = "See our curriculum"
+    [[params.feature_list.items]]
+      image = "images/showcase/showcase-3.png"
+      title = "Learn anywhere"
+      text = "Our CBDS program is entirely online and you can take it for free. You can take the classes any time and at your own pace. You get a certificate for each CBDS online class from Leanpub."
+      button_link = ""
+      button_text = "Learn how"
+    [[params.feature_list.items]]
+      image = "images/showcase/showcase-3.png"
+      title = "Career support"
+      text = "Our program covers soft skills you need to get data science jobs, including how to network and get your name out there. We are also interested in working with partner companies who need to fill data science roles to place our graduates in remote and local data science jobs. (If you are looking for data scientists consider becoming a CBDS hiring partner)."
+      button_link = ""
+      button_text = "Learn how"
 
   [params.gallery]
     title = "Our Partners"
