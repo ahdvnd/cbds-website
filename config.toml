@@ -19,10 +19,10 @@ theme = "vex-hugo"
   [params.navbar]
     logo = "CBDS"
     [[params.navbar.menu]]
-      link = "#"
+      link = "../index.html"
       text = "HOME"
     [[params.navbar.menu]]
-      link = "#about"
+      link = "../index.html"
       text = "ABOUT"
     [[params.navbar.menu]]
       link = "./_book/index.html"
@@ -31,7 +31,7 @@ theme = "vex-hugo"
       link = "https://www.patreon.com/"
       text = "DONATE"
     [[params.navbar.menu]]
-      link = "#contact"
+      link = "./contact/contact.html"
       text = "CONTACT"
 
   # Header
@@ -88,13 +88,13 @@ theme = "vex-hugo"
   [params.feature_list]
     title = "Our Approach"
     [[params.feature_list.items]]
-      image = "images/showcase/showcase-4.png"
+      image = "images/showcase/chromebook.png"
       title = "We minimize computer costs"
       text = "We have developed an online program that lets students do data science using only a web browser and cheap computers like Chromebooks."
       button_link = "https://www.google.com/chromebook/"
       button_text = "Learn more about Google Chromebook"
     [[params.feature_list.items]]
-      image = "images/showcase/showcase-3.png"
+      image = "images/showcase/chromebook.png"
       title = "Free courses"
       text = "Our CBDS program is entirely online and you can take it for free. You can take the classes any time and at your own pace. You get a certificate for each CBDS online class from Leanpub."
       button_link = ""
@@ -143,7 +143,7 @@ theme = "vex-hugo"
       position = "Curriculum Lead"
       image = "images/team/aboozar.jpg"
     [params.testimonials.button]
-      link = ""
+      link = "./contact.html"
       text = "Contact us if you have any questions"
 
   # Footer uses navbar data
