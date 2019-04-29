@@ -17,7 +17,7 @@ theme = "vex-hugo"
 
   # Navigation bar informations
   [params.navbar]
-    logo = "CBDS"
+    logo = "Cloud-Based Data Science"
     [[params.navbar.menu]]
       link = "../index.html"
       text = "HOME"
@@ -143,7 +143,7 @@ theme = "vex-hugo"
       position = "Curriculum Lead"
       image = "images/team/aboozar.jpg"
     [params.testimonials.button]
-      link = "./contact.html"
+      link = "./contact/contact.html"
       text = "Contact us if you have any questions"
 
   # Footer uses navbar data
