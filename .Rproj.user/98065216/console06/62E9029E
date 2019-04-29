@@ -1449,3 +1449,82 @@ remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8) 
 To https://github.com/ahdvnd/cbds-website.git
    9def305..a103432  master -> master
 ]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git commit -m clea[K[K[K[K"clean [Ked cona[K[Kntact folder"
+[master 1b928b7] cleaned contact folder
+ 67 files changed, 122 insertions(+), 298 deletions(-)
+ delete mode 100644 public/contact/apple-touch-icon-precomposed.png
+ delete mode 100644 public/contact/categories/index.xml
+ delete mode 100644 public/contact/categories/r/index.xml
+ delete mode 100644 public/contact/images/about-img.jpg
+ delete mode 100644 public/contact/images/about.jpg
+ delete mode 100644 public/contact/images/avater.png
+ delete mode 100644 public/contact/images/big-showcase.png
+ delete mode 100644 public/contact/images/call-to-action-2.jpg
+ delete mode 100644 public/contact/images/call-to-action.jpg
+ delete mode 100644 public/contact/images/call-to-action2.jpg
+ delete mode 100644 public/contact/images/counter-box.png
+ delete mode 100644 public/contact/images/curriculum.png
+ delete mode 100644 public/contact/images/header-bg-2.jpg
+ delete mode 100644 public/contact/images/header-bg.jpg
+ delete mode 100644 public/contact/images/header-overlay.png
+ delete mode 100644 public/contact/images/logo-01.png
+ delete mode 100644 public/contact/images/logo-2.png
+ delete mode 100644 public/contact/images/logo-3.png
+ delete mode 100644 public/contact/images/logo-4.png
+ delete mode 100644 public/contact/images/logo.png
+ delete mode 100644 public/contact/images/logo1.png
+ delete mode 100644 public/contact/images/map.png
+ delete mode 100644 public/contact/images/showcase/chromebook.png
+ delete mode 100644 public/contact/images/showcase/partner_datacamp.png
+ delete mode 100644 public/contact/images/showcase/partner_hebcac.png
+ delete mode 100644 public/contact/images/showcase/partner_leanpub.png
+ delete mode 100644 public/contact/images/showcase/partner_rstudio.png
+ delete mode 100644 public/contact/images/showcase/partner_starbucks.png
+ delete mode 100644 public/contact/images/showcase/showcase-1.png
+ delete mode 100644 public/contact/images/showcase/showcase-2.png
+ delete mode 100644 public/contact/images/showcase/showcase-3.png
+ delete mode 100644 public/contact/images/showcase/showcase-4.png
+ delete mode 100644 public/contact/images/showcase/showcase-5.png
+ delete mode 100644 public/contact/images/showcase/showcase-6.png
+ delete mode 100644 public/contact/images/showcase/showcase-7.png
+ delete mode 100644 public/contact/images/showcase/showcase-8.png
+ delete mode 100644 public/contact/images/team/aboozar.jpg
+ delete mode 100755 public/contact/images/team/albert.png
+ delete mode 100644 public/contact/images/team/ashley.png
+ delete mode 100644 public/contact/images/team/jeff.png
+ delete mode 100755 public/contact/images/team/john.png
+ delete mode 100755 public/contact/images/team/kai.png
+ delete mode 100755 public/contact/images/team/kayode.png
+ delete mode 100755 public/contact/images/team/leah.png
+ delete mode 100755 public/contact/images/team/leo.png
+ delete mode 100755 public/contact/images/team/leslie.png
+ delete mode 100755 public/contact/images/team/margaret.png
+ delete mode 100755 public/contact/images/team/sarah.png
+ delete mode 100755 public/contact/images/team/sean (1).png
+ delete mode 100755 public/contact/images/team/sean.png
+ delete mode 100755 public/contact/images/team/shannon.png
+ delete mode 100755 public/contact/images/team/siruo.png
+ delete mode 100644 public/contact/images/watch-2.png
+ delete mode 100644 public/contact/images/watch.jpg
+ delete mode 100644 public/contact/images/watch.png
+ delete mode 100644 public/contact/post/2015-07-23-r-rmarkdown.Rmd
+ delete mode 100644 public/contact/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ delete mode 100644 public/contact/post/index.xml
+ delete mode 100644 public/contact/sitemap.xml
+ delete mode 100644 public/contact/tags/index.xml
+ delete mode 100644 public/contact/tags/plot/index.xml
+ delete mode 100644 public/contact/tags/r-markdown/index.xml
+ delete mode 100644 public/contact/tags/regression/index.xml
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git push
+Counting objects: 13, done.
+Delta compression using up to 8 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 2.34 KiB | 0 bytes/s, done.
+Total 13 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/ahdvnd/cbds-website.git
+   a103432..1b928b7  master -> master
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ gi a[K[Kt add 
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/random/cbds-websiteAboozars-MacBook-Pro:cbds-website Hadzzz$ git add .
