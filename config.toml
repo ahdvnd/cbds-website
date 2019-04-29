@@ -117,10 +117,10 @@ theme = "vex-hugo"
     # Set the image directory to use as base
     directory = "images/showcase"
     # Set the images to show in the gallery
-    images = ["showcase-1.png", "showcase-2.png", "showcase-3.png", "showcase-4.png", "showcase-5.png"]
+    images = ["partner_hebcac.png", "partner_rstudio.png", "partner_leanpub.png", "partner_datacamp.png", "partner_starbucks.png"]
 
   [params.call_to_action]
-    title = "Get Product Updates"
+    title = "Stay Connected"
     text = "Enter your email address here to stay connected"
     placeholder = "Your Email Address Here"
     button_text = "Subscribe"
@@ -144,6 +144,6 @@ theme = "vex-hugo"
       image = "images/team/aboozar.jpg"
     [params.testimonials.button]
       link = ""
-      text = "Grab You Product Now"
+      text = "Contact us if you have any questions"
 
   # Footer uses navbar data
